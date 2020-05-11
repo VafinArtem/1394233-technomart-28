@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Артем Вафин](https://up.htmlacademy.ru/htmlcss/28/user/1394233).
-* Наставник: [Алексей Березин](https://up.htmlacademy.ru/htmlcss/28/user/263537).
+* Наставник: [Арсений Березин](https://up.htmlacademy.ru/htmlcss/28/user/263537).
 
 ---
 
