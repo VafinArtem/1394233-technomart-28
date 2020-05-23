@@ -54,12 +54,13 @@
         <h2>Перфораторы</h2>
         <section>
           <h3>ФИЛЬТР:</h3>
-          <form action="https://echo.htmlacademy.ru" method="GET">
+          <form action="https://echo.htmlacademy.ru" method="GET" oninput="costrangeoutputmin.value=costrangemin.value, costrangeoutputmax.value=costrangemax.value">
             <fieldset>
               <legend>ЦЕНА:</legend>
               <label for="costrange" class="visually-hidden">Цена</label>
-              <input type="range" min="0" max="40000" id="costrange" name="costrange">
-              <input type="text" value="0"> - <input type="text" value="30000">
+              <input type="range" min="0" max="40000" id="costrangemin" name="costrangemin">
+              <input type="range" min="0" max="40000" id="costrangemax" name="costrangemax">
+              <input type="text" name="costrangeoutputmin"> - <input type="text" name="costrangeoutputmax">
             </fieldset>
             <fieldset>
               <legend>ПРОИЗВОДИТЕЛИ:</legend>
