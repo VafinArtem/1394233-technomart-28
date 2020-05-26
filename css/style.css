@@ -258,17 +258,32 @@ h2 {
     line-height: 18px;
 }
 
+.copyright a {
+    color: var(--special-yellow);
+}
+
+.copyright a:hover,
+.copyright a:focus {
+    text-decoration: underline;
+}
+
+.copyright a:active {
+    color: var(--special-red);
+}
+
 .social-items {
     list-style: none;
 }
 
 .social-item {
+    display: inline-block;
     background-color: var(--special-dark);
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 50%;
+    
 }
 
 .vk {
@@ -290,4 +305,10 @@ h2 {
 .social-item:focus,
 .social-item:active {
     background-color: var(--special-red);
+}
+
+/* Pop-ups */
+
+.popup {
+    display: none;
 }
