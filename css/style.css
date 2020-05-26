@@ -2,22 +2,22 @@
 
 :root {
     --basic-black: #000000;
-    --basic-extra-dark: #293449;
-    --basic-extra-dark-active: #161D29;
-    --basic-dark: #32425C;
-    --basic-neutral: #C5C5C5;
-    --basic-extra-light: #F1F5F7;
+    --basic-gray-darkest: #161D29;
+    --basic-gray-extra-dark: #293449;
+    --basic-gray-dark: #32425C;
+    --basic-gray-normal: #3D546F;
+    --basic-gray-light: #A9A9A9;
+    --basic-gray-extra-light: #C5C5C5;
+    --basic-gray-lightest: #E5E5E5;
+    --basic-gray-extra-lightest: #F1F5F7;
     --basic-white: #ffffff;
-    --special-red: #EE3643;
-    --special-red-active: #BA2732;
-    --special-green: #63A63E;
-    --special-green-hover: #5FBB2D;
-    --special-green-active: #518534;
-    --special-yellow: #FFD180;
-    --special-dark: #212A3A;
-    --special-grey: #3D546F;
-    --special-grey-light: #E5E5E5;
-    --special-grey-dark: #A9A9A9;
+    --basic-red: #EE3643;
+    --basic-red-dark: #BA2732;
+    --basic-green-light: #5FBB2D;
+    --basic-green: #63A63E;
+    --basic-green-dark: #518534;
+
+    --special-gold: #FFD180;
 }
 
 /* Global */
@@ -57,11 +57,11 @@ ul {
 /* Header */
 
 .header {
-    background-color: var(--basic-extra-light);
+    background-color: var(--basic-gray-extra-lightest);
 }
 
 .submenu {
-    background-color: var(--basic-extra-dark);
+    background-color: var(--basic-gray-extra-dark);
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
@@ -72,33 +72,33 @@ ul {
 }
 
 .submenu-order {
-    background-color: var(--special-green);
+    background-color: var(--basic-green);
 }
 
 .submenu-cart-notempty {
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
 }
 
 .logo-header {
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
     text-align: center;
     width: 220px;
     height: 47px;
 }
 
 .logo-header:active {
-    background-color: var(--special-red-active);
+    background-color: var(--basic-red-dark);
 }
 
 .submenu-order:hover,
 .submenu-order:focus {
-    background-color: var(--special-green-hover);
+    background-color: var(--basic-green-light);
 }
 
 .submenu-mark:active,
 .submenu-cart:active,
 .submenu-cart-notempty:active {
-    background-color: var(--basic-extra-dark-active);
+    background-color: var(--basic-gray-darkest);
     opacity: 0.5;
 }
 
@@ -110,11 +110,11 @@ ul {
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
-    color: var(--special-red);
+    color: var(--basic-red);
 }
 
 .find-us a {
-    color: var(--special-red);
+    color: var(--basic-red);
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
@@ -124,7 +124,7 @@ ul {
 .find-us-addr {
     font-size: 14px;
     line-height: 24px;
-    color: var(--basic-dark);
+    color: var(--basic-gray-dark);
 }
 
 .header-button {
@@ -139,11 +139,11 @@ ul {
 
 .header-button:hover,
 .header-button:focus {
-    color: var(--special-red);
+    color: var(--basic-red);
 }
 
 .header-button:active {
-    color: var(--basic-neutral)
+    color: var(--basic-gray-extra-light)
 }
 
 .personel-name {
@@ -158,35 +158,35 @@ ul {
 .personel a {
     font-size: 16px;
     line-height: 18px;
-    color: var(--basic-dark);
+    color: var(--basic-gray-dark);
 }
 
 .personel a:hover,
 .personel a:focus {
-    color: var(--special-red);
+    color: var(--basic-red);
 }
 
 .personel a:active {
-    color: var(--basic-neutral);
+    color: var(--basic-gray-extra-light);
 }
 
 .logout-btn {
     border: 0;
     background-color: var(--basic-white);
-    color: var(--basic-neutral);
+    color: var(--basic-gray-extra-light);
 }
 
 .logout-btn:hover,
 .logout-btn:focus {
-    color: var(--special-grey);
+    color: var(--basic-gray-normal);
 }
 
 .logout-btn:active {
-    color: var(--special-grey);
+    color: var(--basic-gray-normal);
 }
 
 .nav {
-    background-color: var(--basic-dark);
+    background-color: var(--basic-gray-dark);
 }
 
 .nav-items a {
@@ -198,7 +198,7 @@ ul {
 .nav-items a:hover,
 .nav-items a:focus,
 .nav-items a:active {
-    background-color: var(--basic-extra-dark);
+    background-color: var(--basic-gray-extra-dark);
 }
 
 .nav-items a:active {
@@ -223,11 +223,11 @@ ul {
 }
 
 .inner {
-    background-color: var(--basic-extra-light);
+    background-color: var(--basic-gray-extra-lightest);
 }
 
 .title {
-    color: var(--basic-dark);
+    color: var(--basic-gray-dark);
 }
 
 h2 {
@@ -260,12 +260,12 @@ legend {
     font-size: 13px;
     line-height: 18px;
     background-color: var(--basic-white);
-    border: solid 1px var(--special-grey-light);
+    border: solid 1px var(--basic-gray-lightest);
 }
 
 .product-item,
 .product-item-hover {
-    border: 1px solid var(--special-grey-light);
+    border: 1px solid var(--basic-gray-lightest);
     width: 220px;
     height: 318px;
     text-align: center;
@@ -288,19 +288,19 @@ legend {
     font: inherit;
     text-decoration-line: line-through;
     text-transform: uppercase;
-    color: var(--special-grey-dark);
+    color: var(--basic-gray-light);
 }
 
 .price {
     font: inherit;
     color: var(--basic-white);
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
 }
 
 .new {
     font: inherit;
     color: var(--basic-white);
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
 }
 
 .btn-cart {
@@ -310,7 +310,7 @@ legend {
     color: var(--basic-white);
     border: none;
     border-radius: 2px;
-    background-color: var(--special-green);
+    background-color: var(--basic-green);
     width: 135px;
     height: 38px;
     text-transform: uppercase;
@@ -320,8 +320,8 @@ legend {
     font-family: "Cuprum", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color: var(--basic-dark);
-    border: 3px solid var(--special-green);
+    color: var(--basic-gray-dark);
+    border: 3px solid var(--basic-green);
     border-radius: 2px;
     background-color: var(--basic-white);
     width: 135px;
@@ -331,16 +331,16 @@ legend {
 
 .btn-cart:hover,
 .btn-cart:focus {
-    background-color: var(--special-green-hover);
+    background-color: var(--basic-green-light);
 }
 
 .btn-cart:active {
-    background-color: var(--special-green-active);
+    background-color: var(--basic-green-dark);
 }
 
 .btn-mark:hover,
 .btn-mark:focus {
-    border-color: var(--basic-dark);
+    border-color: var(--basic-gray-dark);
 }
 
 .btn-mark:active {
@@ -360,7 +360,7 @@ legend {
 
 .main-button {
     font-family: inherit;
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
     color: var(--basic-white);
     font-size: 14px;
     line-height: 18px;
@@ -371,29 +371,29 @@ legend {
 }
 
 .main-button:active {
-    background-color: var(--special-red-active);
+    background-color: var(--basic-red-dark);
 }
 
 /* Footer */
 
 .footer {
-    background-color: var(--basic-dark);
+    background-color: var(--basic-gray-dark);
     color: var(--basic-white);
 }
 
 .logo-footer {
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
     width: 220px;
     height: 68px;
     text-align: center;
 }
 
 .logo-footer:active {
-    background-color: var(--special-red-active);
+    background-color: var(--basic-red-dark);
 }
 
 .footer-nav-items a {
-    color: var(--basic-extra-light);
+    color: var(--basic-gray-extra-lightest);
     font-size: 18px;
     line-height: 24px;
 }
@@ -408,7 +408,7 @@ legend {
 }
 
 .subnav-items a {
-    color: var(--special-yellow);
+    color: var(--special-gold);
     font-size: 18px;
     line-height: 24px;
 }
@@ -419,7 +419,7 @@ legend {
 }
 
 .subnav-items a:active {
-    color: var(--special-yellow);
+    color: var(--special-gold);
     opacity: 0.5;
 }
 
@@ -427,7 +427,7 @@ legend {
 .foot-find-us a {
     font-size: 18px;
     line-height: 24px;
-    color: var(--basic-extra-light);
+    color: var(--basic-gray-extra-lightest);
 }
 
 .copyright {
@@ -436,7 +436,7 @@ legend {
 }
 
 .copyright a {
-    color: var(--special-yellow);
+    color: var(--special-gold);
 }
 
 .copyright a:hover,
@@ -445,7 +445,7 @@ legend {
 }
 
 .copyright a:active {
-    color: var(--special-red);
+    color: var(--basic-red);
 }
 
 .social-item {
@@ -477,7 +477,7 @@ legend {
 .social-item:hover,
 .social-item:focus,
 .social-item:active {
-    background-color: var(--special-red);
+    background-color: var(--basic-red);
 }
 
 /* Pop-ups */
