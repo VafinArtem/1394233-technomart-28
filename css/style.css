@@ -49,9 +49,13 @@ img {
 
 /* Header */
 
+.header {
+    background-color: var(--basic-extra-light);
+    font-family: "Cuprum", sans-serif;
+}
+
 .submenu {
     background-color: var(--basic-extra-dark);
-    font-family: "Cuprum", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
@@ -88,4 +92,41 @@ img {
 
 .submenu-order:active {
     color: var(--basic-white-active);
+}
+
+.header-about {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--special-red);
+}
+
+.find-us a {
+    color: var(--special-red);
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    border: solid 3px var(--basic-white);
+}
+
+.find-us-addr {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--basic-dark);
+}
+
+.personel .button {
+    font-family: inherit;
+    font-size: 21px;
+    line-height: 21px;
+    background-color: var(--basic-white);
+    border: none;
+}
+
+.personel .button:hover {
+    color: var(--special-red);
+}
+
+.personel .button:active {
+    color: var(--basic-neutral)
 }
