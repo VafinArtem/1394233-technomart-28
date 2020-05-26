@@ -12,10 +12,12 @@
     --special-red-active: #BA2732;
     --special-green: #63A63E;
     --special-green-hover: #5FBB2D;
+    --special-green-active: #518534;
     --special-yellow: #FFD180;
     --special-dark: #212A3A;
     --special-grey: #3D546F;
     --special-grey-light: #E5E5E5;
+    --special-grey-dark: #A9A9A9;
 }
 
 /* Global */
@@ -261,19 +263,88 @@ legend {
     border: solid 1px var(--special-grey-light);
 }
 
-.product-item {
+.product-item,
+.product-item-hover {
     border: 1px solid var(--special-grey-light);
     width: 220px;
     height: 318px;
     text-align: center;
     font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    vertical-align: middle;
 }
 
-.product-item h3 {
+.product-item h3,
+.product-item-hover h3 {
     font-family: inherit;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
+}
+
+.sale {
+    font: inherit;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: var(--special-grey-dark);
+}
+
+.price {
+    font: inherit;
+    color: var(--basic-white);
+    background-color: var(--special-red);
+}
+
+.new {
+    font: inherit;
+    color: var(--basic-white);
+    background-color: var(--special-red);
+}
+
+.btn-cart {
+    font-family: "Cuprum", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-white);
+    border: none;
+    border-radius: 2px;
+    background-color: var(--special-green);
+    width: 135px;
+    height: 38px;
+    text-transform: uppercase;
+}
+
+.btn-mark {
+    font-family: "Cuprum", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-dark);
+    border: 3px solid var(--special-green);
+    border-radius: 2px;
+    background-color: var(--basic-white);
+    width: 135px;
+    height: 38px;
+    text-transform: uppercase;
+}
+
+.btn-cart:hover,
+.btn-cart:focus {
+    background-color: var(--special-green-hover);
+}
+
+.btn-cart:active {
+    background-color: var(--special-green-active);
+}
+
+.btn-mark:hover,
+.btn-mark:focus {
+    border-color: var(--basic-dark);
+}
+
+.btn-mark:active {
+    opacity: 0.5;
 }
 
 .text {
