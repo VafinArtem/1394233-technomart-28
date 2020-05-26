@@ -22,8 +22,7 @@ body {
     min-width: 960px;
     margin: 0;
     padding: 0;
-    font-family: "PT Sans", sans-serif;
-    font-size: 13px;
+    font-family: "Cuprum", sans-serif;
     color: var(--basic-black);
 }
 
@@ -51,7 +50,6 @@ img {
 
 .header {
     background-color: var(--basic-extra-light);
-    font-family: "Cuprum", sans-serif;
 }
 
 .submenu {
@@ -115,20 +113,22 @@ img {
     color: var(--basic-dark);
 }
 
-.personel .button {
+.header-button {
     font-family: inherit;
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-white);
+    text-align: center;
+    vertical-align: middle;
     border: none;
 }
 
-.personel .button:hover,
-.personel .button:focus {
+.header-button:hover,
+.header-button:focus {
     color: var(--special-red);
 }
 
-.personel .button:active {
+.header-button:active {
     color: var(--basic-neutral)
 }
 
@@ -138,7 +138,6 @@ img {
 
 .nav-items {
     list-style: none;
-    
 }
 
 .nav-items a {
@@ -155,4 +154,39 @@ img {
 
 .nav-items a:active {
     color: var(--basic-white-active);
+}
+
+/* Main */
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.transport-items {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-button {
+    font-family: inherit;
+    background-color: var(--special-red);
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+}
+
+.main-button:active {
+    background-color: var(--special-red-active);
 }
