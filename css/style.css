@@ -14,6 +14,7 @@
     --special-green-hover: #5FBB2D;
     --special-yellow: #FFD180;
     --special-dark: #212A3A;
+    --special-grey: #3D546F;
 }
 
 /* Global */
@@ -67,6 +68,10 @@ img {
     background-color: var(--special-green);
 }
 
+.submenu-cart-notempty {
+    background-color: var(--special-red);
+}
+
 .logo-header {
     background-color: var(--special-red);
     text-align: center;
@@ -84,13 +89,14 @@ img {
 }
 
 .submenu-mark:active,
-.submenu-cart:active {
+.submenu-cart:active,
+.submenu-cart-notempty:active {
     background-color: var(--basic-extra-dark-active);
-    color: var(--basic-white-active);
+    opacity: 0.5;
 }
 
 .submenu-order:active {
-    color: var(--basic-white-active);
+    opacity: 0.5;
 }
 
 .header-about {
@@ -131,6 +137,45 @@ img {
 
 .header-button:active {
     color: var(--basic-neutral)
+}
+
+.personel-name {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.login {
+    background-color: var(--basic-white);
+}
+
+.personel a {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-dark);
+}
+
+.personel a:hover,
+.personel a:focus {
+    color: var(--special-red);
+}
+
+.personel a:active {
+    color: var(--basic-neutral);
+}
+
+.logout-btn {
+    border: 0;
+    background-color: var(--basic-white);
+    color: var(--basic-neutral);
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+    color: var(--special-grey);
+}
+
+.logout-btn:active {
+    color: var(--special-grey);
 }
 
 .nav {
