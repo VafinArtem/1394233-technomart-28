@@ -123,10 +123,36 @@ img {
     border: none;
 }
 
-.personel .button:hover {
+.personel .button:hover,
+.personel .button:focus {
     color: var(--special-red);
 }
 
 .personel .button:active {
     color: var(--basic-neutral)
+}
+
+.nav {
+    background-color: var(--basic-dark);
+}
+
+.nav-items {
+    list-style: none;
+    
+}
+
+.nav-items a {
+    color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.nav-items a:hover,
+.nav-items a:focus,
+.nav-items a:active {
+    background-color: var(--basic-extra-dark);
+}
+
+.nav-items a:active {
+    color: var(--basic-white-active);
 }
