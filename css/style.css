@@ -8,7 +8,6 @@
     --basic-neutral: #C5C5C5;
     --basic-extra-light: #F1F5F7;
     --basic-white: #ffffff;
-    --basic-white-active: rgba(255, 255, 255, 0.5);
     --special-red: #EE3643;
     --special-red-active: #BA2732;
     --special-green: #63A63E;
@@ -67,13 +66,14 @@ img {
     background-color: var(--special-green);
 }
 
-.logo {
+.logo-header {
     background-color: var(--special-red);
+    text-align: center;
     width: 220px;
     height: 47px;
 }
 
-.logo:active {
+.logo-header:active {
     background-color: var(--special-red-active);
 }
 
@@ -153,7 +153,7 @@ img {
 }
 
 .nav-items a:active {
-    color: var(--basic-white-active);
+    opacity: 0.5;
 }
 
 /* Main */
@@ -189,4 +189,57 @@ h2 {
 
 .main-button:active {
     background-color: var(--special-red-active);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--basic-dark);
+}
+
+.logo-footer {
+    background-color: var(--special-red);
+    width: 220px;
+    height: 68px;
+    text-align: center;
+}
+
+.logo-footer:active {
+    background-color: var(--special-red-active);
+}
+
+.footer-nav-items,
+.subnav-items {
+    list-style: none;
+}
+
+.footer-nav-items a {
+    color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-nav-items a:hover,
+.footer-nav-items a:focus {
+    text-decoration: underline;
+}
+
+.footer-nav-items a:active {
+    opacity: 0.5;
+}
+
+.subnav-items a {
+    color: var(--special-yellow);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subnav-items a:hover,
+.subnav-items a:focus {
+    text-decoration: underline;
+}
+
+.subnav-items a:active {
+    color: var(--special-yellow);
+    opacity: 0.5;
 }
