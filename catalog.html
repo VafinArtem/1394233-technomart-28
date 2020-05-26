@@ -53,14 +53,16 @@
       </nav>
     </header>
     <main>
-      <div>
-        <a href="index.html">Главная</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="#">Инструмент</a>
-        <a>Перфораторы</a>
-      </div>
+      <ul class="breadcrumbs">
+        <li><a href="index.html" title="Главная"><div class="home"></div></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a>Перфораторы</a></li>
+      </ul>
       <section>
-        <h2>Перфораторы</h2>
+        <div class="inner">
+          <h2 class="title">Перфораторы</h2>
+        </div>
         <section>
           <h3>ФИЛЬТР:</h3>
           <form action="https://echo.htmlacademy.ru" method="GET" oninput="costrangeoutputmin.value=costrangemin.value, costrangeoutputmax.value=costrangemax.value">
@@ -73,7 +75,7 @@
             </fieldset>
             <fieldset>
               <legend>ПРОИЗВОДИТЕЛИ:</legend>
-              <ul>
+              <ul class="filter-items">
                 <li>
                   <input type="checkbox" id="filter-bosch" name="bosch" checked>
                   <label for="filter-bosch">BOSCH</label>
@@ -98,7 +100,7 @@
             </fieldset>
             <fieldset>
               <legend>ПИТАНИЕ:</legend>
-              <ul>
+              <ul class="filter-items">
                 <li>
                   <input type="radio" name="power" value="battery" id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
@@ -109,7 +111,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">ПОКАЗАТЬ</button>
+            <button class="filter-btn" type="submit">ПОКАЗАТЬ</button>
           </form>
         </section>
         <section>
@@ -124,8 +126,8 @@
         </section>
       </section>
       <section>
-        <ul>
-          <li>
+        <ul class="products">
+          <li class="product-item">
             <img src="img/bosch6000.jpg" width="144" height="128" alt="Фото перфоратора BOSCH BFG 6000">
             <h3>Перфоратор BOSCH<br>BFG 6000</h3>
             <p>30500 Р.</p>

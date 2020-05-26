@@ -15,6 +15,7 @@
     --special-yellow: #FFD180;
     --special-dark: #212A3A;
     --special-grey: #3D546F;
+    --special-grey-light: #E5E5E5;
 }
 
 /* Global */
@@ -45,6 +46,10 @@ img {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
+}
+
+ul {
+    list-style: none;
 }
 
 /* Header */
@@ -182,10 +187,6 @@ img {
     background-color: var(--basic-dark);
 }
 
-.nav-items {
-    list-style: none;
-}
-
 .nav-items a {
     color: var(--basic-white);
     font-size: 18px;
@@ -204,10 +205,75 @@ img {
 
 /* Main */
 
+.breadcrumbs a{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.home {
+    display: inline-block;
+    background-image: url(../img/icon-home.svg);
+    width: 14px;
+    height: 12px;
+}
+
+.inner {
+    background-color: var(--basic-extra-light);
+}
+
+.title {
+    color: var(--basic-dark);
+}
+
 h2 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter-items {
+    font-size: 15px;
+    line-height: 19px;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.filter-btn {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: var(--basic-white);
+    border: solid 1px var(--special-grey-light);
+}
+
+.product-item {
+    border: 1px solid var(--special-grey-light);
+    width: 220px;
+    height: 318px;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+}
+
+.product-item h3 {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
 }
 
 .text {
@@ -253,11 +319,6 @@ h2 {
 
 .logo-footer:active {
     background-color: var(--special-red-active);
-}
-
-.footer-nav-items,
-.subnav-items {
-    list-style: none;
 }
 
 .footer-nav-items a {
@@ -314,10 +375,6 @@ h2 {
 
 .copyright a:active {
     color: var(--special-red);
-}
-
-.social-items {
-    list-style: none;
 }
 
 .social-item {
