@@ -55,17 +55,19 @@
       </nav>
     </header>
     <main>
-      <ul class="breadcrumbs">
-        <li><a href="index.html" title="Главная"><div class="home"></div></a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a>Перфораторы</a></li>
-      </ul>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-items">
+          <li><a href="index.html" title="Главная"><div class="home"></div></a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a>Перфораторы</a></li>
+        </ul>
+      </div>
       <section>
         <div class="inner">
           <h2 class="title">Перфораторы</h2>
         </div>
-        <section>
+        <section class="filter">
           <h3>ФИЛЬТР:</h3>
           <form action="https://echo.htmlacademy.ru" method="GET" oninput="costrangeoutputmin.value=costrangemin.value, costrangeoutputmax.value=costrangemax.value">
             <fieldset>
@@ -126,8 +128,8 @@
           </ul>
         </section>
       </section>
-      <section>
-        <ul class="products">
+      <section class="products">
+        <ul class="products-list">
           <li class="product-item">
             <img src="img/bosch6000.jpg" width="144" height="128" alt="Фото перфоратора BOSCH BFG 6000">
             <h3>Перфоратор BOSCH<br>BFG 6000</h3>
@@ -241,25 +243,27 @@
           <a href="tel:88125550555">+7 (812) 555-05-55</a>
         </p>
       </section>
-      <p class="copyright">
-        © 2010–2019 Компания «Техномарт» Все права защищены
-      </p>
-      <section class="social">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
-        <ul class="social-items">
-          <li><a href="#" title="Страница Вконтакте"><div class="social-item vk"></div></a></li>
-          <li><a href="#" title="Страница Facebook"><div class="social-item fb"></div></a></li>
-          <li><a href="#" title="Страница Instagram"><div class="social-item inst"></div></a></li>
-        </ul>
-      </section>
-      <p class="copyright">
-        Обратная связь:<br>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-      <p class="copyright">
-        Разработано —<br>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+      <div class="footer-inner">
+        <p class="copyright">
+          © 2010–2019 Компания «Техномарт» Все права защищены
+        </p>
+        <section class="social">
+          <h2 class="visually-hidden">Наши социальные сети</h2>
+          <ul class="social-items">
+            <li><a href="#" title="Страница Вконтакте"><div class="social-item vk"></div></a></li>
+            <li><a href="#" title="Страница Facebook"><div class="social-item fb"></div></a></li>
+            <li><a href="#" title="Страница Instagram"><div class="social-item inst"></div></a></li>
+          </ul>
+        </section>
+        <p class="copyright">
+          Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="copyright">
+          Разработано —<br>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+    </div>
     </footer>
     <!-- Попап добавления в корзину -->
     <div class="popup">

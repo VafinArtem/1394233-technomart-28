@@ -2,7 +2,8 @@
 
 :root {
     --basic-black: #000000;
-    --basic-gray-darkest: #161D29;
+    --basic-gray-extra-darkest: #161D29;
+    --basic-gray-darkest: #212A3A;
     --basic-gray-extra-dark: #293449;
     --basic-gray-dark: #32425C;
     --basic-gray-normal: #3D546F;
@@ -48,10 +49,6 @@ img {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
-}
-
-ul {
-    list-style: none;
 }
 
 /* Header -- Global */
@@ -100,7 +97,7 @@ ul {
 .submenu-mark:active,
 .submenu-cart:active,
 .submenu-cart-notempty:active {
-    background-color: var(--basic-gray-darkest);
+    background-color: var(--basic-gray-extra-darkest);
     opacity: 0.5;
 }
 
@@ -108,7 +105,7 @@ ul {
     opacity: 0.5;
 }
 
-/* Footer -- Submenu -- Search */
+/* Header -- Submenu -- Search */
 
 .search-input {
     background-color: var(--basic-gray-extra-dark);
@@ -224,6 +221,10 @@ ul {
     background-color: var(--basic-gray-dark);
 }
 
+.nav ul {
+    list-style: none;
+}
+
 .nav-items a {
     color: var(--basic-white);
     font-size: 18px;
@@ -285,6 +286,10 @@ h2 {
 
 /* Main -- Breadcrumbs */
 
+.breadcrumbs ul {
+    list-style: none;
+}
+
 .breadcrumbs a{
     font-family: 'PT Sans', sans-serif;
     font-size: 13px;
@@ -314,6 +319,10 @@ legend {
     text-transform: uppercase;
 }
 
+.filter ul {
+    list-style: none;
+}
+
 .filter-items {
     font-size: 15px;
     line-height: 19px;
@@ -330,6 +339,10 @@ legend {
 }
 
 /* Main -- Product List */
+
+.products ul {
+    list-style: none;
+}
 
 .product-item,
 .product-item-hover {
@@ -422,6 +435,10 @@ legend {
     color: var(--basic-white);
 }
 
+.footer-inner {
+    background-color: var(--basic-gray-extra-dark);
+}
+
 /* Footer -- Logo */
 
 .logo-footer {
@@ -436,6 +453,10 @@ legend {
 }
 
 /* Footer -- Navigation */ 
+
+.footer-nav ul {
+    list-style: none;
+}
 
 .footer-nav-items a {
     color: var(--basic-gray-extra-lightest);
@@ -497,9 +518,13 @@ legend {
 
 /* Footer - Social */
 
+.social ul {
+    list-style: none;
+}
+
 .social-item {
     display: inline-block;
-    background-color: var(--special-dark);
+    background-color: var(--basic-gray-darkest);
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
