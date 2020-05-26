@@ -3,12 +3,16 @@
 :root {
     --basic-black: #000000;
     --basic-extra-dark: #293449;
+    --basic-extra-dark-active: #161D29;
     --basic-dark: #32425C;
     --basic-neutral: #C5C5C5;
     --basic-extra-light: #F1F5F7;
     --basic-white: #ffffff;
+    --basic-white-active: rgba(255, 255, 255, 0.5);
     --special-red: #EE3643;
+    --special-red-active: #BA2732;
     --special-green: #63A63E;
+    --special-green-hover: #5FBB2D;
     --special-yellow: #FFD180;
 }
 
@@ -43,3 +47,45 @@ img {
     clip: rect(0 0 0 0)
 }
 
+/* Header */
+
+.submenu {
+    background-color: var(--basic-extra-dark);
+    font-family: "Cuprum", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+}
+
+.submenu a {
+    color: var(--basic-white);
+}
+
+.submenu-order {
+    background-color: var(--special-green);
+}
+
+.logo {
+    background-color: var(--special-red);
+    width: 220px;
+    height: 47px;
+}
+
+.logo:active {
+    background-color: var(--special-red-active);
+}
+
+.submenu-order:hover,
+.submenu-order:focus {
+    background-color: var(--special-green-hover);
+}
+
+.submenu-mark:active,
+.submenu-cart:active {
+    background-color: var(--basic-extra-dark-active);
+    color: var(--basic-white-active);
+}
+
+.submenu-order:active {
+    color: var(--basic-white-active);
+}
