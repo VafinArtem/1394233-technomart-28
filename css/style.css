@@ -54,7 +54,7 @@ ul {
     list-style: none;
 }
 
-/* Header -- Global*/
+/* Header -- Global */
 
 .header {
     background-color: var(--basic-gray-extra-lightest);
@@ -106,6 +106,29 @@ ul {
 
 .submenu-order:active {
     opacity: 0.5;
+}
+
+/* Footer -- Submenu -- Search */
+
+.search-input {
+    background-color: var(--basic-gray-extra-dark);
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.search-input:focus {
+    background-color: var(--basic-white);
+}
+
+.search-input::-webkit-input-placeholder {
+    color: var(--basic-white);
+}
+
+.search-input::-moz-placeholder {
+    color: var(--basic-white);
 }
 
 /* Header -- About & Find Us*/
