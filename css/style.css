@@ -14,8 +14,10 @@
     --basic-gray-double-estra-light: #EAEAEA;
     --basic-white: #ffffff;
    
-    --basic-red: #EE3643;
     --basic-red-dark: #BA2732;
+    --basic-red: #EE3643;
+    --basic-red-light: #FF5357;
+    
     
     --basic-green-light: #5FBB2D;
     --basic-green: #63A63E;
@@ -396,6 +398,48 @@ h2 {
     width: 220px;
     height: 145px;
     text-align: center;
+}
+
+/* Main -- Services */
+
+.services ul {
+    list-style: none;
+}
+
+.services button {
+    border: none;
+    background-color: var(--basic-gray-dark);
+    width: 240px;
+    height: 61px;
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.services button:hover,
+.services button:focus {
+    background-color: var(--basic-gray-extra-dark);
+}
+
+.services button:active {
+    background-color: var(--basic-white);
+    color: var(--basic-gray-dark);
+}
+
+.items-desc h3 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-gray-dark);
+}
+
+.services a {
+    color: var(--basic-white);
+    background-color: var(--basic-red-light);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 /* Main -- Breadcrumbs */
