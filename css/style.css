@@ -17,8 +17,19 @@
     --basic-green-light: #5FBB2D;
     --basic-green: #63A63E;
     --basic-green-dark: #518534;
+    
+    
+    --basic-blue-normal: #3BBCE3;
+    
+    --special-white-opacity: rgba(255, 255, 255, 0.3);
+    
+    --special-purple-normal: #DC91D8;
 
+    --special-green-normal: #8ED78F;
+
+    --special-gold-dark: #FFBF47;
     --special-gold: #FFD180;
+    --special-gold-light: #FFC047;
 }
 
 /* Global */
@@ -282,6 +293,52 @@ h2 {
 
 .main-btn:active {
     background-color: var(--basic-red-dark);
+}
+
+/* Main -- Offer */
+
+.offer-items h3 {
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.offer-button a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+.offer-button {
+    background-color: var(--special-white-opacity);
+    width: 135px;
+    height: 38px;
+}
+
+.item {
+    width: 300px;
+    min-height: 123px;
+}
+
+.materials {
+    background-color: var(--special-gold-dark);
+}
+
+.tools {
+    background-color: var(--basic-blue-normal);
+}
+
+.technology {
+    background-color: var(--special-purple-normal);
+}
+
+.discount {
+    background-color: var(--special-green-normal);
+}
+
+.delivery {
+    background-color: var(--special-gold-light);
 }
 
 /* Main -- Breadcrumbs */
