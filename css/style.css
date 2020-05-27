@@ -637,6 +637,40 @@ legend {
     opacity: 0.5;
 }
 
+.pagination-item,
+.pagination-item-next {
+    border: solid 1px var(--basic-gray-lightest);
+    border-radius: 2px;
+    color: var(--basic-black);
+}
+
+.pagination-item {
+    display: inline-table;
+    width: 38px;
+    height: 38px;
+}
+
+.pagination-item:hover,
+.pagination-item-next:hover,
+.pagination-item:focus,
+.pagination-item-next:focus {
+    border-color: var(--basic-gray-extra-light);
+}
+
+.pagination-item:active,
+.pagination-item-next:active {
+    border-color: var(--basic-red);
+}
+
+.pagination-item-next {
+    display: inline-table;
+    width: 140px;
+    height: 38px;
+}
+
+
+
+
 /* Footer -- Global */
 
 .footer {
