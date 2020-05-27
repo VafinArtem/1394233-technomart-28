@@ -23,6 +23,7 @@
     --basic-green: #63A63E;
     --basic-green-dark: #518534;
     
+    --basic-beige-dark: #F7F3EC;
     --basic-beige-normal: #F9F5F0;
 
     --special-white-opacity: rgba(255, 255, 255, 0.3);
@@ -463,18 +464,34 @@ h2 {
     height: 12px;
 }
 
-/* Main -- Filter Form */
+/* Main -- Filter & Sort Form */
+
+.filt-sort-inner {
+    background-color: var(--basic-beige-dark);
+}
+
+.filter,
+.sort {
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    text-transform: uppercase;
+}
+
+.filter h3,
+.sort h3 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+}
 
 fieldset {
     border: none;
 }
 
 legend {
-    font-family: "PT Sans", "Tahoma", sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
-    text-transform: uppercase;
+    
 }
 
 .filter ul {
@@ -484,16 +501,50 @@ legend {
 .filter-items {
     font-size: 15px;
     line-height: 19px;
-    font-family: "PT Sans", "Tahoma", sans-serif;
     text-transform: uppercase;
 }
 
 .filter-btn {
-    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-family: inherit;
     font-size: 13px;
     line-height: 18px;
     background-color: var(--basic-white);
     border: solid 1px var(--basic-gray-lightest);
+}
+
+.price-input {
+    background-color: var(--basic-beige-dark);
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    border: none;
+}
+
+.sort ul {
+    list-style: none;
+}
+
+.sort-items a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--basic-red);
+    color: var(--basic-black);
+    opacity: 0.3;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.sort-items a:hover,
+.sort-items a:focus {
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--basic-red);
+}
+
+.sort-items a:active {
+    text-decoration: none;
+    color: var(--basic-red);
 }
 
 /* Main -- Product List */

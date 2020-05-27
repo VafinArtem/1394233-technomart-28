@@ -68,13 +68,17 @@
           <h2 class="title">Перфораторы</h2>
         </div>
         <section class="filter">
-          <h3>ФИЛЬТР:</h3>
+          <div class="filt-sort-inner">
+            <h3>ФИЛЬТР:</h3>
+          </div>
           <form action="https://echo.htmlacademy.ru" method="GET" oninput="costrangeoutputmin.value=costrangemin.value, costrangeoutputmax.value=costrangemax.value">
             <fieldset>
               <legend>ЦЕНА:</legend>
-              <input type="range" min="0" max="40000" id="costrangemin" name="costrangemin">
-              <input type="range" min="0" max="40000" id="costrangemax" name="costrangemax">
-              <input type="text" name="costrangeoutputmin"> - <input type="text" name="costrangeoutputmax">
+              <div class="filt-sort-inner">
+                <input type="range" min="0" max="40000" id="costrangemin" name="costrangemin">
+                <input type="range" min="0" max="40000" id="costrangemax" name="costrangemax">
+              </div>
+              <input class="price-input" type="text" name="costrangeoutputmin"> - <input class="price-input" type="text" name="costrangeoutputmax">
             </fieldset>
             <fieldset>
               <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -117,9 +121,9 @@
             <button class="filter-btn" type="submit">ПОКАЗАТЬ</button>
           </form>
         </section>
-        <section>
+        <section class="sort filt-sort-inner">
           <h3>СОРТИРОВКА:</h3>
-          <ul>
+          <ul class="sort-items">
             <li><a href="#">ПО ЦЕНЕ</a></li>
             <li><a href="#">ПО ТИПУ</a></li>
             <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
