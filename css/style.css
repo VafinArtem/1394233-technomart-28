@@ -12,24 +12,28 @@
     --basic-gray-lightest: #E5E5E5;
     --basic-gray-extra-lightest: #F1F5F7;
     --basic-white: #ffffff;
+   
     --basic-red: #EE3643;
     --basic-red-dark: #BA2732;
+    
     --basic-green-light: #5FBB2D;
     --basic-green: #63A63E;
     --basic-green-dark: #518534;
     
-    
-    --basic-blue-normal: #3BBCE3;
-    
     --special-white-opacity: rgba(255, 255, 255, 0.3);
-    
+    --special-grey-light-opacity: rgba(197, 197, 197, 0.3);
+    --special-grey-dark-opacity: rgba(169, 169, 169, 0.3);
+
+    --special-blue-normal: #3BBCE3;
+
     --special-purple-normal: #DC91D8;
 
     --special-green-normal: #8ED78F;
 
-    --special-gold-dark: #FFBF47;
+    --special-gold-extra-dark: #FFBF47;
+    --special-gold-dark: #FFC047;
     --special-gold: #FFD180;
-    --special-gold-light: #FFC047;
+    
 }
 
 /* Global */
@@ -304,16 +308,23 @@ h2 {
     line-height: 30px;
 }
 
-.offer-button a {
+.offer-button {
+    background-color: var(--special-white-opacity);
+    width: 135px;
+    height: 38px;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-white);
 }
-.offer-button {
-    background-color: var(--special-white-opacity);
-    width: 135px;
-    height: 38px;
+
+.offer-button:hover,
+.offer-button:focus {
+    background-color: var(--special-grey-light-opacity);
+}
+
+.offer-button:active {
+    background-color: var(--special-grey-dark-opacity);
 }
 
 .item {
@@ -322,11 +333,11 @@ h2 {
 }
 
 .materials {
-    background-color: var(--special-gold-dark);
+    background-color: var(--special-gold-extra-dark);
 }
 
 .tools {
-    background-color: var(--basic-blue-normal);
+    background-color: var(--special-blue-normal);
 }
 
 .technology {
@@ -338,7 +349,29 @@ h2 {
 }
 
 .delivery {
-    background-color: var(--special-gold-light);
+    background-color: var(--special-gold-dark);
+}
+
+/* Main - Offer - Slider */
+
+.slider {
+    background-image: url(../img/perforators.jpg);
+    width: 620px;
+    height: 266px;
+}
+
+.slider h3{
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.slider p {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
 }
 
 /* Main -- Breadcrumbs */
