@@ -464,20 +464,20 @@ h2 {
     height: 12px;
 }
 
-/* Main -- Filter & Sort Form */
+/* Main -- Filter & sorting Form */
 
-.filt-sort-inner {
+.filt-sorting-inner {
     background-color: var(--basic-beige-dark);
 }
 
 .filter,
-.sort {
+.sorting {
     font-family: "PT Sans", "Tahoma", sans-serif;
     text-transform: uppercase;
 }
 
 .filter h3,
-.sort h3 {
+.sorting h3 {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
@@ -520,11 +520,11 @@ legend {
     border: none;
 }
 
-.sort ul {
+.sorting ul {
     list-style: none;
 }
 
-.sort-items a {
+.sorting-items a {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red);
@@ -534,15 +534,15 @@ legend {
     line-height: 17px;
 }
 
-.sort-items a:hover,
-.sort-items a:focus {
+.sorting-items a:hover,
+.sorting-items a:focus {
     opacity: 1;
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: var(--basic-red);
 }
 
-.sort-items a:active {
+.sorting-items a:active {
     text-decoration: none;
     color: var(--basic-red);
 }
