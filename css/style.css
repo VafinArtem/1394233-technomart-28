@@ -101,18 +101,19 @@ img {
 
 /* Header -- Submenu */
 
+.submenu-bg {
+    background-color: var(--basic-gray-extra-dark);
+}
+
 .submenu {
-    
     display: flex;
     align-items: center;
-    width: 940px;
-    background-color: var(--basic-gray-extra-dark);
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
 }
 
-.row-submenu {
+.submenu-list {
     display: flex;
     justify-content: end;
     margin-right: 0;
@@ -120,7 +121,7 @@ img {
     height: 100%;
 }
 
-.row-submenu a {
+.submenu-list a {
     display: inline-block;
     width: 150px;
     height: 47px;
@@ -244,12 +245,26 @@ img {
 /* Header -- Personal Area */
 
 .login {
+    width: 299px;
+    min-height: 45px;
     background-color: var(--basic-white);
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 7px;
 }
 
 .personel-name {
+    display: inline;
     font-size: 21px;
     line-height: 21px;
+}
+
+.personel {
+    text-align: center;
+}
+
+.personel a:not(:last-child) {
+    margin-right: 33px;
 }
 
 .personel a {
@@ -276,6 +291,8 @@ img {
     background-color: var(--basic-white);
     text-align: center;
     margin: 0;
+    padding: 0;
+    margin-bottom: 28px;
     border: none;
 }
 
