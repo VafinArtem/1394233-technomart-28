@@ -102,6 +102,7 @@ img {
 /* Header -- Submenu */
 
 .submenu {
+    
     display: flex;
     align-items: center;
     width: 940px;
@@ -198,7 +199,7 @@ img {
 
 /* Header -- About & Find Us*/
 
-.column-about {
+.row-about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -397,6 +398,11 @@ h2 {
 }
 
 .main-btn {
+    display: inline-block;
+    min-height: 38px;
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-family: inherit;
     background-color: var(--basic-red);
     color: var(--basic-white);
@@ -404,7 +410,6 @@ h2 {
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    vertical-align: middle;
     border: none;
 }
 
@@ -541,6 +546,37 @@ h2 {
     line-height: 18px;
     text-transform: uppercase;
 }
+
+/* Main -- About Us & Contacts Flex*/
+
+.row-about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.about-us {
+    width: 478px;
+}
+
+.contacts {
+    width: 300px;
+}
+
+.contacts button {
+    margin: 0;
+    margin-top: 38px;
+}
+
+.about-us .main-btn {
+    margin-top: 20px;
+}
+
+button.main-btn {
+    padding: 0;
+    width: inherit;
+}
+
 
 /* Main -- Breadcrumbs */
 
