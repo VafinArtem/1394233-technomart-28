@@ -817,17 +817,30 @@ legend {
     background-color: var(--basic-gray-extra-dark);
 }
 
-/* Footer -- Logo */
+/* Footer -- Logo & contacts*/
 
 .logo-footer {
     background-color: var(--basic-red);
     width: 220px;
     height: 68px;
+    padding-top: 20px;
     text-align: center;
 }
 
 .logo-footer:active {
     background-color: var(--basic-red-dark);
+}
+
+.column-logo-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-find-us,
+.foot-find-us a {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-gray-extra-lightest);
 }
 
 /* Footer -- Navigation */ 
@@ -836,10 +849,35 @@ legend {
     list-style: none;
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-items,
+.subnav-items {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    padding-top: 37px;
+}
+
+.footer-nav-items li:not(:first-child),
+.subnav-items li:not(:first-child) {
+    margin-left: 60px;
+}
+
 .footer-nav-items a {
     color: var(--basic-gray-extra-lightest);
     font-size: 18px;
     line-height: 24px;
+    
 }
 
 .footer-nav-items a:hover,
@@ -869,46 +907,85 @@ legend {
 
 /* Footer -- Find Us & Copyright Section*/
 
-.foot-find-us,
-.foot-find-us a {
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--basic-gray-extra-lightest);
+.row-copyright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.copyright, 
+.e-mail,
+.site {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.e-mail {
+    width: 137px;
+    margin-left: 118px;
+}
+
+.site {
+    width: 98px;
+    margin-left: 51px;
 }
 
 .copyright {
-    font-size: 16px;
-    line-height: 18px;
+    flex-grow: 1;
+    justify-self: flex-start;
+    width: 227px;
 }
 
-.copyright a {
+.e-mail a,
+.site a {
     color: var(--special-gold);
 }
 
-.copyright a:hover,
-.copyright a:focus {
+.e-mail a:hover,
+.e-mail a:focus,
+.site a:hover,
+.site a:focus {
     text-decoration: underline;
 }
 
-.copyright a:active {
+.e-mail a:active,
+.site a:active {
     color: var(--basic-red);
 }
 
 /* Footer - Social */
 
+.social {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    margin-top: 34px;
+    margin-bottom: 29px;
+    margin-left: 149px;
+}
+
 .social ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-items li {
+    display: inline-block;
+    margin: 0;
+    
 }
 
 .social-item {
-    display: inline-block;
+    display: block;
     background-color: var(--basic-gray-darkest);
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 50%;
-    
 }
 
 .vk {
