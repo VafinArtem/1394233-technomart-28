@@ -198,15 +198,33 @@ img {
 
 /* Header -- About & Find Us*/
 
+.column-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 153px;
+}
+
 .header-about {
+    width: 240px;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
 }
 
+.find-us {
+    width: 270px;
+}
+
 .find-us a {
+    display: block;
+    width: auto;
     color: var(--basic-red);
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 5px;
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
@@ -217,6 +235,9 @@ img {
     font-size: 14px;
     line-height: 24px;
     color: var(--basic-gray-dark);
+    text-align: center;
+    margin: 0;
+    margin-top: 3px;
 }
 
 /* Header -- Personal Area */
@@ -247,13 +268,23 @@ img {
 
 .login-btn,
 .signin-btn {
+    height: 45px;
     font-family: inherit;
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-white);
     text-align: center;
-    vertical-align: middle;
+    margin: 0;
     border: none;
+}
+
+.login-btn {
+    width: 121px;
+    margin-right: 10px;
+}
+
+.signin-btn {
+    width: 150px;
 }
 
 .login-btn:hover,
