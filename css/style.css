@@ -932,6 +932,10 @@ legend {
     color: var(--basic-gray-extra-lightest);
 }
 
+.foot-find-us p {
+    margin-bottom: 0;
+}
+
 /* Footer -- Navigation */ 
 
 .footer-nav ul {
@@ -941,6 +945,7 @@ legend {
 .footer-nav {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 54px;
 }
 
 .footer-nav-list {
