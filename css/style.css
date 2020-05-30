@@ -94,7 +94,6 @@ img {
 
 .header {
     background-color: var(--basic-gray-extra-lightest);
-    margin-bottom: 59px;
     display: flex;
     flex-direction: column;
 }
@@ -385,10 +384,6 @@ img {
     background-color: var(--basic-beige-normal);
 }
 
-.title-inner h2 {
-    color: var(--basic-gray-dark);
-}
-
 .inner {
     background-color: var(--basic-gray-extra-lightest);
 }
@@ -401,6 +396,11 @@ h2 {
 
 .title {
     color: var(--basic-gray-dark);
+}
+
+.linear-title {
+    color: var(--basic-gray-dark);
+    margin-left: 29px;
 }
 
 .text {
@@ -623,7 +623,6 @@ button.main-btn {
 .products {
     display: grid;
     gap: 20px;
-    
 }
 
 .products-list {
@@ -640,6 +639,9 @@ button.main-btn {
 
 .breadcrumbs ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 21px;
 }
 
 .breadcrumbs a{
@@ -648,6 +650,14 @@ button.main-btn {
     line-height: 18px;
     text-transform: uppercase;
     color: inherit;
+}
+
+.breadcrumbs-items li{
+    display: inline-block;
+}
+
+.breadcrumbs-items li:not(:first-child) {
+    margin-left: 40px;
 }
 
 .home {
@@ -739,8 +749,6 @@ legend {
     text-decoration: none;
     color: var(--basic-red);
 }
-
-
 
 /* Main -- Product List */
 
@@ -865,9 +873,6 @@ legend {
     width: 140px;
     height: 38px;
 }
-
-
-
 
 /* Footer -- Global */
 
