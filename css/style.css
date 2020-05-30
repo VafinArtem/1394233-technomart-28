@@ -671,6 +671,9 @@ button.main-btn {
 
 .filt-sorting-inner {
     background-color: var(--basic-beige-dark);
+    min-height: 38px;
+    padding-top: 10px;
+    padding-left: 18px;
 }
 
 .filter,
@@ -683,11 +686,14 @@ button.main-btn {
 .sorting h3 {
     font-size: 13px;
     line-height: 18px;
+    margin: 0;
     font-weight: normal;
 }
 
 fieldset {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 legend {
@@ -699,6 +705,8 @@ legend {
 
 .filter ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filter-items {
@@ -843,17 +851,30 @@ legend {
     opacity: 0.5;
 }
 
+.pagination-flex {
+    display: flex;
+
+}
+
+.pagination {
+    display: flex;
+    margin: 0;
+}
+
 .pagination-item,
 .pagination-item-next {
     border: solid 1px var(--basic-gray-lightest);
     border-radius: 2px;
     color: var(--basic-black);
+    text-align: center;
+    padding-top: 10px;
 }
 
 .pagination-item {
     display: inline-table;
     width: 38px;
     height: 38px;
+    margin-right: 10px;
 }
 
 .pagination-item:hover,
