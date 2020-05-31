@@ -608,6 +608,7 @@ h2 {
     grid-row: min-content min-content 1fr;
     grid-column: 240px 1fr;
     column-gap: 80px;
+    margin-bottom: 70px;
     
 }
 
@@ -694,8 +695,8 @@ h2 {
 }
 
 .items-desc h3 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 36px;
+    line-height: 24px;
     text-transform: uppercase;
     color: var(--basic-gray-dark);
     margin: 0;
