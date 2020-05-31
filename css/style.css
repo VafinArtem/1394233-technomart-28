@@ -416,7 +416,7 @@ h2 {
 
 .main-btn {
     display: inline-block;
-    min-height: 38px;
+    height: 38px;
     padding-top: 11px;
     padding-left: 40px;
     padding-right: 40px;
@@ -543,6 +543,7 @@ h2 {
     z-index: 1;
     grid-row: 3/4;
     grid-column: 1/-1;
+    width: 192px;
 }
 
 /* Main -- Popular Products */
