@@ -878,8 +878,19 @@ legend {
     border: none;
 }
 
+.sorting {
+    display: flex;
+    justify-content: space-between;
+}
+
 .sorting ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sorting-items {
+    display: flex;
 }
 
 .sorting-items a {
@@ -1040,6 +1051,27 @@ legend {
     display: inline-table;
     width: 140px;
     height: 38px;
+}
+
+
+/* Main -- About Products */
+
+.about-products {
+    display: flex;
+    flex-direction: column;
+    margin-top: 59px;
+    padding-bottom: 67px;
+    padding-top: 64px;
+}
+
+.about-products h2,
+.about-products p {
+    padding: 0;
+    margin: 0;
+}
+
+.about-products h2 {
+    margin-bottom: 25px;
 }
 
 /* Footer -- Global */
