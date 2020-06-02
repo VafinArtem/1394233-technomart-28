@@ -1250,7 +1250,8 @@ legend {
 }
 
 .foot-find-us p {
-    margin-bottom: 0;
+    margin: 0;
+    margin-top: 22px;
 }
 
 /* Footer -- Navigation */ 
@@ -1326,7 +1327,6 @@ legend {
 .copyright-text, 
 .e-mail,
 .site {
-    flex-grow: 1;
     font-size: 16px;
     line-height: 18px;
     margin: 0;
@@ -1335,12 +1335,13 @@ legend {
 
 .e-mail {
     width: 137px;
-    margin-left: 118px;
+    margin-left: 110px;
+    margin-right: 51px;
 }
 
 .site {
     width: 98px;
-    margin-left: 51px;
+    margin-right: 12px;
 }
 
 .copyright-text {
@@ -1383,17 +1384,20 @@ legend {
     padding: 0;
 }
 
+.social-items {
+    display: flex;
+    justify-content: space-between;
+}
+
 .social-items li {
-    display: inline-block;
-    margin: 0;
-    
+    margin-right: 3px;
 }
 
 .social-item {
     display: block;
     background-color: var(--basic-gray-darkest);
-    width: 44px;
-    height: 44px;
+    width: 43px;
+    height: 43px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 50%;
