@@ -1426,11 +1426,14 @@ legend {
 
 /* Pop-ups */
 
+/* Pop-up -- Map */
+
 .popup-map {
     position: absolute;
     border-top: solid 7px var(--basic-red);
     background-color: var(--basic-white);
-    right: 471px;
+    right: 50%;
+    margin-right: -485px;
     top: 2335px;
     width: 970px;
     height: 477px;
@@ -1453,6 +1456,8 @@ legend {
     background-repeat: no-repeat;
 }
 
+/* Pop-up -- Write Us */
+
 .popup-writeus {
     display: flex;
     align-items: center;
@@ -1460,7 +1465,8 @@ legend {
     position: absolute;
     border-top: solid 7px var(--basic-red);
     background-color: var(--basic-white);
-    right: 33%;
+    right: 50%;
+    margin-right: -310px;
     top: 2369px;
     width: 620px;
     height: 430px;
