@@ -178,6 +178,11 @@ img {
     height: 16px;
 }
 
+.submenu-mark:hover::before,
+.submenu-cart:hover::before {
+    opacity: 1;
+}
+
 .submenu-cart {
     position: relative;
     padding-left: 20px;
