@@ -13,38 +13,31 @@
     --basic-gray-extra-lightest: #F1F5F7;
     --basic-gray-double-estra-light: #EAEAEA;
     --basic-white: #ffffff;
-   
     --basic-red-dark: #BA2732;
     --basic-red: #EE3643;
     --basic-red-light: #FF5357;
-    
-    
     --basic-green-light: #5FBB2D;
     --basic-green: #63A63E;
     --basic-green-dark: #518534;
-    
     --basic-beige-dark: #F7F3EC;
     --basic-beige-normal: #F9F5F0;
-
     --special-white-opacity: rgba(255, 255, 255, 0.3);
     --special-grey-light-opacity: rgba(197, 197, 197, 0.3);
     --special-grey-dark-opacity: rgba(169, 169, 169, 0.3);
-
     --special-blue-normal: #3BBCE3;
-
     --special-purple-normal: #DC91D8;
-
     --special-green-normal: #8ED78F;
-
     --special-gold-extra-dark: #FFBF47;
     --special-gold-dark: #FFC047;
     --special-gold: #FFD180;
-    
 }
+
 
 /* Global */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -88,7 +81,8 @@ img {
     width: 960px;
     margin: 0 auto;
     padding: 0 10px;
-  }
+}
+
 
 /* Header -- Global */
 
@@ -97,6 +91,7 @@ img {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Header -- Submenu */
 
@@ -128,7 +123,7 @@ img {
     height: 42px;
     text-align: center;
     padding-top: 10px;
-    margin: 0;   
+    margin: 0;
 }
 
 .submenu a {
@@ -189,6 +184,7 @@ img {
     position: relative;
     padding-left: 20px;
 }
+
 .submenu-cart::before,
 .submenu-cart-notempty::before {
     content: "";
@@ -218,13 +214,12 @@ img {
     opacity: 0.5;
 }
 
-/* Header -- Submenu -- Search */
 
+/* Header -- Submenu -- Search */
 
 .search {
     margin-left: 240px;
 }
-
 
 .search-input {
     background-color: var(--basic-gray-extra-dark);
@@ -254,6 +249,7 @@ img {
 .search-input::-moz-placeholder {
     color: var(--basic-white);
 }
+
 
 /* Header -- About & Find Us*/
 
@@ -305,9 +301,7 @@ img {
     top: 11px;
     width: 19px;
     height: 19px;
-
 }
-
 
 .find-us-addr {
     font-size: 14px;
@@ -317,6 +311,7 @@ img {
     margin: 0;
     margin-top: 3px;
 }
+
 
 /* Header -- Personal Area */
 
@@ -413,6 +408,7 @@ img {
     color: var(--basic-gray-normal);
 }
 
+
 /* Header -- Navigation */
 
 .nav {
@@ -462,6 +458,7 @@ img {
 .nav-items a:active {
     opacity: 0.5;
 }
+
 
 /* Main -- Global */
 
@@ -514,7 +511,6 @@ h2 {
     position: relative;
     padding-left: 30px;
     padding-left: 37px;
-    
 }
 
 .transport-items li:not(:last-child) {
@@ -551,6 +547,7 @@ h2 {
 .main-btn:active {
     background-color: var(--basic-red-dark);
 }
+
 
 /* Main -- Offer */
 
@@ -617,6 +614,7 @@ h2 {
     grid-column: 3/3;
 }
 
+
 /* Main - Offer - Slider */
 
 .slider-box {
@@ -638,7 +636,7 @@ h2 {
     z-index: 0;
 }
 
-.slider h3{
+.slider h3 {
     color: var(--basic-white);
     font-weight: bold;
     font-size: 36px;
@@ -665,6 +663,7 @@ h2 {
     width: 192px;
 }
 
+
 /* Main -- Popular Products */
 
 .popular-products {
@@ -684,6 +683,7 @@ h2 {
     gap: 20px;
     grid-template-columns: 220px 220px 220px 220px;
 }
+
 
 /* Main -- Partners */
 
@@ -712,6 +712,7 @@ h2 {
     text-align: center;
 }
 
+
 /* Main -- Services */
 
 .services {
@@ -720,7 +721,6 @@ h2 {
     grid-column: 240px 1fr;
     column-gap: 80px;
     margin-bottom: 70px;
-    
 }
 
 .services h2 {
@@ -792,7 +792,6 @@ h2 {
 }
 
 .desc-guarantee {
-    
     background-image: url(../img/bg-guarantee.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -821,6 +820,7 @@ h2 {
     line-height: 18px;
     text-transform: uppercase;
 }
+
 
 /* Main -- About Us & Contacts Flex*/
 
@@ -882,6 +882,7 @@ button.main-btn {
     width: inherit;
 }
 
+
 /* Main -- Catalog Grid */
 
 .catalog {
@@ -906,6 +907,7 @@ button.main-btn {
     grid-row: 3/5;
 }
 
+
 /*Main -- Catalog -- Products Grid */
 
 .products {
@@ -919,10 +921,11 @@ button.main-btn {
     grid-template-columns: 220px 220px 220px;
 }
 
+
 /* Main -- Breadcrumbs */
 
 .breadcrumbs {
-    grid-column: 1/-1 ;
+    grid-column: 1/-1;
 }
 
 .breadcrumbs ul {
@@ -932,7 +935,7 @@ button.main-btn {
     margin-top: 21px;
 }
 
-.breadcrumbs a{
+.breadcrumbs a {
     font-family: 'PT Sans', "Tahoma", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -940,7 +943,7 @@ button.main-btn {
     color: inherit;
 }
 
-.breadcrumbs-items li{
+.breadcrumbs-items li {
     display: inline-block;
 }
 
@@ -954,6 +957,7 @@ button.main-btn {
     width: 14px;
     height: 12px;
 }
+
 
 /* Main -- Filter & sorting Form */
 
@@ -988,7 +992,6 @@ legend {
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
-    
 }
 
 .filter ul {
@@ -1056,6 +1059,7 @@ legend {
     text-decoration: none;
     color: var(--basic-red);
 }
+
 
 /* Main -- Product List */
 
@@ -1210,6 +1214,7 @@ legend {
     margin-bottom: 25px;
 }
 
+
 /* Footer -- Global */
 
 .footer {
@@ -1220,6 +1225,7 @@ legend {
 .footer-inner {
     background-color: var(--basic-gray-extra-dark);
 }
+
 
 /* Footer -- Logo & contacts*/
 
@@ -1254,7 +1260,8 @@ legend {
     margin-top: 22px;
 }
 
-/* Footer -- Navigation */ 
+
+/* Footer -- Navigation */
 
 .footer-nav ul {
     list-style: none;
@@ -1289,7 +1296,6 @@ legend {
     color: var(--basic-gray-extra-lightest);
     font-size: 18px;
     line-height: 24px;
-    
 }
 
 .footer-nav-items a:hover,
@@ -1317,6 +1323,7 @@ legend {
     opacity: 0.5;
 }
 
+
 /* Footer -- Find Us & Copyright Section*/
 
 .copyright {
@@ -1324,7 +1331,7 @@ legend {
     justify-content: flex-end;
 }
 
-.copyright-text, 
+.copyright-text,
 .e-mail,
 .site {
     font-size: 16px;
@@ -1366,6 +1373,7 @@ legend {
 .site a:active {
     color: var(--basic-red);
 }
+
 
 /* Footer - Social */
 
@@ -1424,7 +1432,9 @@ legend {
     background-color: var(--basic-red);
 }
 
+
 /* Pop-ups */
+
 
 /* Pop-up -- Map */
 
@@ -1456,6 +1466,7 @@ legend {
     background-repeat: no-repeat;
 }
 
+
 /* Pop-up -- Write Us */
 
 .popup-writeus {
@@ -1475,7 +1486,6 @@ legend {
 
 .popup-writeus-inner {
     position: relative;
-
 }
 
 .write-us-inner {
@@ -1531,7 +1541,6 @@ legend {
     background-color: var(--basic-beige-dark);
     z-index: 0;
 }
-
 
 .write-us-form input::-webkit-input-placeholder,
 .write-us-form textarea::-webkit-input-placeholder {
