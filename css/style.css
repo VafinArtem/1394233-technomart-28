@@ -149,13 +149,12 @@ img {
     margin-right: 17px;
     text-align: center;
     width: 220px;
-    height: 47px;
+    height: 51px;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .logo-header img {
-    padding-top: 12px;
-    padding-bottom: 17px;
+    padding-top: 16px;
 }
 
 .logo-header:active {
@@ -181,7 +180,7 @@ img {
 /* Header -- Submenu -- Search */
 
 .search {
-    margin-left: 235px;
+    margin-left: 262px;
 }
 
 .search-input {
@@ -209,10 +208,10 @@ img {
 
 .header-about {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 153px;
+    padding-left: 40px;
+    min-height: 157px
 }
 
 .header-desc {
@@ -356,8 +355,8 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 26px;
+    padding-right: 26px;
 }
 
 .nav-items li {
