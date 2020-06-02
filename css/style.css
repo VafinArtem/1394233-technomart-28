@@ -1426,6 +1426,32 @@ legend {
 
 /* Pop-ups */
 
+.popup-map {
+    position: absolute;
+    border-top: solid 7px var(--basic-red);
+    right: 471px;
+    top: 2335px;
+    width: 970px;
+    height: 477px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.map-inner {
+    position: relative;
+}
+
+.popup-map button {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    border: none;
+    background-image: url(../img/icon-close.svg);
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+}
+
 .popup {
     display: none;
 }
