@@ -525,7 +525,7 @@ h2 {
     content: "";
     position: absolute;
     left: 0;
-    top: 13px;
+    top: 10px;
     background-image: url(../img/marker.svg);
     height: 2px;
     width: 25px;
@@ -1429,6 +1429,7 @@ legend {
 .popup-map {
     position: absolute;
     border-top: solid 7px var(--basic-red);
+    background-color: var(--basic-white);
     right: 471px;
     top: 2335px;
     width: 970px;
@@ -1436,11 +1437,11 @@ legend {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.map-inner {
+.popup-map-inner {
     position: relative;
 }
 
-.popup-map button {
+.close-btn {
     position: absolute;
     top: 17px;
     right: 10px;
@@ -1450,6 +1451,97 @@ legend {
     width: 21px;
     height: 21px;
     background-repeat: no-repeat;
+}
+
+.popup-writeus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-top: solid 7px var(--basic-red);
+    background-color: var(--basic-white);
+    right: 33%;
+    top: 2369px;
+    width: 620px;
+    height: 430px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.popup-writeus-inner {
+    position: relative;
+
+}
+
+.write-us-inner {
+    width: 620px;
+    height: 430px;
+    border: solid 3px var(--basic-green-dark);
+}
+
+.write-us-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 460px;
+    z-index: 10;
+}
+
+.write-us-form input {
+    width: 220px;
+    height: 38px;
+    border: 2px solid var(--basic-gray-extra-light);
+    border-radius: 2px;
+    margin-bottom: 13px;
+}
+
+.write-us-form label {
+    display: block;
+    width: 220px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 11px;
+    margin-bottom: 13px;
+}
+
+.write-us-form textarea {
+    width: 460px;
+    height: 114px;
+    border: 2px solid var(--basic-gray-extra-light);
+    border-radius: 2px;
+    margin-bottom: 74px;
+}
+
+.write-us-form button {
+    width: 460px;
+}
+
+.send-btn-inner {
+    position: absolute;
+    width: 620px;
+    height: 112px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--basic-beige-dark);
+    z-index: 0;
+}
+
+
+.write-us-form input::-webkit-input-placeholder,
+.write-us-form textarea::-webkit-input-placeholder {
+    color: var(--basic-gray-light);
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.write-us-form input::-moz-placeholder,
+.write-us-form textarea::-moz-placeholder {
+    color: var(--basic-white);
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 13px;
+    padding-left: 12px;
+    padding-top: 12px;
 }
 
 .popup {

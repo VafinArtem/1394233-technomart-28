@@ -310,38 +310,36 @@
     </footer>
     <!-- Попап карты -->
     <div class="popup-map popup">
-      <div class="map-inner">
+      <div class="popup-map-inner">
       <h3 class="visually-hidden">Как к нам добраться</h3>
       <img src="img/map.jpg" width="970px" height="477px" alt="Полная карта с располложением офиса на улице Большая Конюшенная, дом 19">
-      <button type="button" aria-label="Закрыть карту"></button>
+      <button class="close-btn" type="button" aria-label="Закрыть карту"></button>
       </div>
     </div>
     
     <!-- Попап формы напишите нам -->
-    <div class="popup">
+    <div class="popup-writeus">
       <h3 class="visually-hidden">Напишите нам</h3>
-      <button type="button">Закрыть форму</button>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label>
-            Ваше имя
-            <input type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-        </p>
-        <p>
-          <label>
-            Ваш e-mail
+      <button class="close-btn" type="button" aria-label="Закрыть форму"></button>
+      
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div>
+            <label for="username">Ваше имя</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label>Ваш e-mail</label>
             <input type="email" name="email" placeholder="email@example.com">
-          </label>
-        </p>
-        <p>
-          <label>
-            Текст письма
-            <textarea name="message" rows="4" placeholder="В свободной форме"></textarea>
-          </label>
-        </p>
-        <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
-      </form>
+          </div>
+          <div>
+            <label>Текст письма</label>
+            <textarea name="message" placeholder="В свободной форме"></textarea>
+          </div>
+          
+          <button class="main-btn" type="submit">ОТПРАВИТЬ</button>
+          
+        </form>
+        <div class="send-btn-inner"></div>
     </div>
   </body>
 </html>
