@@ -107,6 +107,7 @@ img {
 
 .submenu {
     display: flex;
+    position: relative;
     align-items: center;
     font-size: 18px;
     line-height: 24px;
@@ -217,9 +218,11 @@ img {
 
 /* Header -- Submenu -- Search */
 
+
 .search {
-    margin-left: 262px;
+    margin-left: 240px;
 }
+
 
 .search-input {
     background-color: var(--basic-gray-extra-dark);
@@ -262,28 +265,47 @@ img {
 
 .header-desc {
     width: 240px;
+    margin: 0;
     font-style: italic;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 24px;
     color: var(--basic-red);
 }
 
 .find-us {
     width: 270px;
+    margin-right: 18px;
+    margin-top: 7px;
 }
 
 .find-us a {
     display: block;
+    position: relative;
     width: auto;
+    height: 45px;
     color: var(--basic-red);
     text-align: center;
-    padding-top: 4px;
+    padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 30px;
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
     border: solid 3px var(--basic-white);
 }
+
+.find-us a::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    left: 36px;
+    top: 11px;
+    width: 19px;
+    height: 19px;
+
+}
+
 
 .find-us-addr {
     font-size: 14px;
@@ -344,13 +366,18 @@ img {
     text-align: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     border: none;
 }
 
 .login-btn {
     width: 121px;
-    margin-right: 10px;
+    margin-right: 6px;
+    padding-right: 7px;
+}
+
+.login-btn svg {
+    margin-right: 6px;
 }
 
 .signin-btn {
