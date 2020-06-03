@@ -964,6 +964,7 @@ button.main-btn {
 .catalog-title-bg {
     grid-column: 1/-1;
     background-color: var(--basic-gray-extra-lightest);
+    min-height: 89px;
 }
 
 .sorting {
@@ -995,13 +996,13 @@ button.main-btn {
 
 .breadcrumbs {
     grid-column: 1/-1;
+    margin-top: 24px;
 }
 
 .breadcrumbs ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 21px;
 }
 
 .breadcrumbs a {
@@ -1030,14 +1031,16 @@ button.main-btn {
 }
 
 .breadcrumbs-items li:not(:first-child) {
-    margin-left: 40px;
+    margin-left: 42px;
+    margin-top: -2px;
+    margin-bottom: 4px;
 }
 
 .home {
     background-image: url(../img/icon-home.svg);
     width: 14px;
     height: 12px;
-    margin-top: 4px;
+    margin-top: 1px;
 }
 
 
