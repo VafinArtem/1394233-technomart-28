@@ -119,7 +119,6 @@ img {
 
 .submenu-list a {
     display: block;
-    width: 150px;
     height: 42px;
     text-align: center;
     padding-top: 10px;
@@ -158,14 +157,15 @@ img {
 }
 
 .submenu-mark {
+    min-width: 150px;
     position: relative;
-    padding-left: 20px;
+    padding-right: 7px;
 }
 
 .submenu-mark::before {
     content: "";
     position: absolute;
-    left: 20px;
+    left: 6px;
     top: 13px;
     background-image: url(../img/icon-bookmark.svg);
     background-repeat: no-repeat;
@@ -175,27 +175,33 @@ img {
 }
 
 .submenu-mark:hover::before,
-.submenu-cart:hover::before {
+.submenu-cart:hover::before,
+.submenu-cart-notempty:hover::before {
     opacity: 1;
 }
 
 .submenu-cart,
 .submenu-cart-notempty {
+    min-width: 136px;
     position: relative;
-    padding-left: 20px;
+    padding-left: 14px;
 }
 
 .submenu-cart::before,
 .submenu-cart-notempty::before {
     content: "";
     position: absolute;
-    left: 25px;
+    left: 12px;
     top: 13px;
     background-image: url(../img/icon-cart.svg);
     background-repeat: no-repeat;
     opacity: 0.3;
     width: 15px;
     height: 15px;
+}
+
+.submenu-order {
+    width: 150px;
 }
 
 .submenu-order:hover,
@@ -314,7 +320,23 @@ img {
 
 /* Header -- Personal Area */
 
+.personel-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+
+.personel-signin {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
 .login {
+    display: flex;
+    justify-content: center;
     width: 299px;
     min-height: 45px;
     background-color: var(--basic-white);
@@ -323,34 +345,49 @@ img {
     margin-bottom: 7px;
 }
 
-.personel {
+.personel-links {
     display: flex;
-    justify-content: flex-end;
-    min-width: 300px;
+    justify-content: space-around;
 }
 
-.personel-name {
+.personel-links a {
     display: inline;
-    font-size: 21px;
-    line-height: 21px;
-}
-
-.personel a:not(:last-child) {
-    margin-right: 33px;
-}
-
-.personel a {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-gray-dark);
 }
 
-.personel a:hover,
-.personel a:focus {
+.personel-links a:hover,
+.personel-links a:focus {
     color: var(--basic-red);
 }
 
-.personel a:active {
+.personel-links a:active {
+    color: var(--basic-gray-extra-light);
+}
+
+.personel-name {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 3px;
+    height: 25px;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+
+.personel-name svg {
+    position: absolute;
+    left: -5px;
+    top: 3px;
+}
+
+.personel-name path {
+    fill: var(--basic-gray-extra-light);
+}
+
+.personel-name:active {
     color: var(--basic-gray-extra-light);
 }
 
@@ -396,8 +433,21 @@ img {
 
 .logout-btn {
     border: 0;
+    width: 20px;
+    height: 17px;
     background-color: var(--basic-white);
-    color: var(--basic-gray-extra-light);
+    margin-left: 14px;
+    margin-top: 3px;
+}
+
+.logout-btn path,
+.personel-name path {
+    fill: var(--basic-gray-extra-light);
+}
+
+.logout-btn:hover path,
+.personel-name:hover path {
+    fill: var(--basic-gray-normal);
 }
 
 .logout-btn:hover,
