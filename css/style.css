@@ -558,7 +558,8 @@ h2 {
 
 .linear-title {
     color: var(--basic-gray-dark);
-    margin-left: 29px;
+    margin-left: 30px;
+    margin-top: 31px;
 }
 
 .text {
@@ -1004,6 +1005,8 @@ button.main-btn {
 }
 
 .breadcrumbs a {
+    display: block;
+    position: relative;
     font-family: 'PT Sans', "Tahoma", sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -1011,8 +1014,19 @@ button.main-btn {
     color: inherit;
 }
 
-.breadcrumbs-items li {
-    display: inline-block;
+.breadcrumbs-items {
+    display: flex;
+}
+
+.breadcrumbs a:not(.home)::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon-right-small.svg);
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 12px;
+    left: -24px;
+    top: 4px;
 }
 
 .breadcrumbs-items li:not(:first-child) {
@@ -1020,10 +1034,10 @@ button.main-btn {
 }
 
 .home {
-    display: inline-block;
     background-image: url(../img/icon-home.svg);
     width: 14px;
     height: 12px;
+    margin-top: 4px;
 }
 
 
