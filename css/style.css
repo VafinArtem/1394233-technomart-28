@@ -257,13 +257,13 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 40px;
     min-height: 157px
 }
 
 .header-desc {
     width: 240px;
     margin: 0;
+    margin-left: 30px;
     font-style: italic;
     font-size: 16px;
     line-height: 24px;
@@ -272,7 +272,6 @@ img {
 
 .find-us {
     width: 270px;
-    margin-right: 18px;
     margin-top: 7px;
 }
 
@@ -324,14 +323,16 @@ img {
     margin-bottom: 7px;
 }
 
+.personel {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
 .personel-name {
     display: inline;
     font-size: 21px;
     line-height: 21px;
-}
-
-.personel {
-    text-align: center;
 }
 
 .personel a:not(:last-child) {
@@ -369,7 +370,7 @@ img {
 
 .login-btn {
     width: 121px;
-    margin-right: 6px;
+    margin-right: 10px;
     padding-right: 7px;
 }
 
