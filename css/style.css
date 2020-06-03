@@ -346,8 +346,25 @@ img {
 }
 
 .personel-links {
+    position: relative;
     display: flex;
     justify-content: space-around;
+    padding-left: 29px;
+    padding-right: 27px;
+    margin-top: 3px;
+}
+
+.personel-links::after {
+    position: absolute;
+    content: "";
+    background-color: var(--basic-gray-dark);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -1px;
+    top: 50%;
 }
 
 .personel-links a {
