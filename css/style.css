@@ -1247,8 +1247,7 @@ legend {
     margin-top: 8px;
 }
 
-.product-item,
-.product-item-hover {
+.product-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1259,7 +1258,7 @@ legend {
     text-align: center;
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 18px;
     vertical-align: middle;
     padding: 0;
@@ -1267,14 +1266,38 @@ legend {
     padding-top: 17px;
 }
 
-.img-inner {
+.product-inner {
+    position: relative;
     width: 185px;
     min-height: 140px;
     margin-bottom: 23px;
 }
 
-.product-item h3,
-.product-item-hover h3 {
+.img-inner {
+    width: 185px;
+    min-height: 140px;
+}
+
+.btn-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: none;
+    width: 185px;
+    min-height: 140px;
+    background-color: var(--basic-white);
+}
+
+.product-item:hover .btn-inner {
+    display: block;
+}
+
+.product-item:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-item h3 {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -1303,7 +1326,7 @@ legend {
     content: "";
     border: 19px solid var(--basic-black);
     top: 0px;
-    right: -38px;
+    right: -19px;
     border-right-width: 0;
     border-left-color: var(--basic-red);
     border-top-color: transparent;
@@ -1326,6 +1349,7 @@ legend {
     width: 135px;
     height: 38px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .btn-mark {
