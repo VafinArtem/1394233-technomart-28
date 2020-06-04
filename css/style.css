@@ -483,7 +483,6 @@ img {
 /* Header -- Navigation */
 
 .nav {
-    background-color: var(--basic-gray-dark);
     min-height: 60px;
     margin-bottom: 60px;
 }
@@ -494,6 +493,7 @@ img {
 }
 
 .nav-items {
+    background-color: var(--basic-gray-dark);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1292,11 +1292,13 @@ legend {
     background-color: var(--basic-white);
 }
 
-.product-item:hover .btn-inner {
+.product-item:hover .btn-inner,
+.product-item:focus .btn-inner {
     display: block;
 }
 
-.product-item:hover {
+.product-item:hover,
+.product-item:focus {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
