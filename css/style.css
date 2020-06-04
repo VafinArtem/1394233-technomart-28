@@ -8,6 +8,7 @@
     --basic-gray-dark: #32425C;
     --basic-gray-normal: #3D546F;
     --basic-gray-middle: #D7DCDE;
+    --basic-gray-middle-adv: #cfcfcf;
     --basic-gray-light-adv: #ABABAB;
     --basic-gray-light: #A9A9A9;
     --basic-gray-extra-light: #C5C5C5;
@@ -22,8 +23,11 @@
     --basic-green-light: #5FBB2D;
     --basic-green: #63A63E;
     --basic-green-dark: #518534;
+    --basic-green-darkest: #367315;
     --basic-beige-dark: #F7F3EC;
     --basic-beige-normal: #F9F5F0;
+    --special-black-opacity: rgba(0, 0, 0, 0.24);
+    --special-black-adv-opacity: rgba(0, 0, 0, 0.15);
     --special-white-opacity: rgba(255, 255, 255, 0.3);
     --special-grey-light-opacity: rgba(197, 197, 197, 0.3);
     --special-grey-dark-opacity: rgba(169, 169, 169, 0.3);
@@ -148,7 +152,7 @@ img {
     text-align: center;
     width: 220px;
     height: 51px;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px -5px 0px var(--special-black-opacity);
 }
 
 .logo-header img {
@@ -1322,7 +1326,7 @@ legend {
     border: 8px solid var(--basic-white);
     background-color: var(--basic-gray-light-adv);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 var(--basic-gray-middle-adv);
     cursor: pointer;
 }
 
@@ -1415,7 +1419,7 @@ legend {
 
 .product-item:hover,
 .product-item:focus {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
 }
 
 .product-item h3 {
@@ -1476,6 +1480,7 @@ legend {
     height: 38px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    box-shadow: inset 0px -3px 0px var(--basic-green-darkest);
 }
 
 .btn-mark {
@@ -1597,7 +1602,7 @@ ul.pagination {
     height: 68px;
     padding-top: 20px;
     text-align: center;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0px -5px 0px var(--special-black-opacity);
 }
 
 .logo-footer:active {
@@ -1808,7 +1813,7 @@ ul.pagination {
     top: 2335px;
     width: 970px;
     height: 477px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
 }
 
 .popup-map-inner {
@@ -1842,7 +1847,7 @@ ul.pagination {
     top: 2369px;
     width: 620px;
     height: 430px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
 }
 
 .popup-writeus-inner {
