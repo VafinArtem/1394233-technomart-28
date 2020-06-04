@@ -7,6 +7,8 @@
     --basic-gray-extra-dark: #293449;
     --basic-gray-dark: #32425C;
     --basic-gray-normal: #3D546F;
+    --basic-gray-middle: #D7DCDE;
+    --basic-gray-light-adv: #ABABAB;
     --basic-gray-light: #A9A9A9;
     --basic-gray-extra-light: #C5C5C5;
     --basic-gray-lightest: #E5E5E5;
@@ -16,6 +18,7 @@
     --basic-red-dark: #BA2732;
     --basic-red: #EE3643;
     --basic-red-light: #FF5357;
+    --basic-green-lightest: #00CA74;
     --basic-green-light: #5FBB2D;
     --basic-green: #63A63E;
     --basic-green-dark: #518534;
@@ -996,7 +999,7 @@ button.main-btn {
 
 .breadcrumbs {
     grid-column: 1/-1;
-    margin-top: 24px;
+    margin-top: 23px;
 }
 
 .breadcrumbs ul {
@@ -1099,14 +1102,6 @@ legend {
     border: solid 1px var(--basic-gray-lightest);
 }
 
-.price-input {
-    background-color: var(--basic-beige-dark);
-    font-family: inherit;
-    font-size: 17px;
-    line-height: 18px;
-    border: none;
-}
-
 .sorting {
     display: flex;
     justify-content: space-between;
@@ -1143,6 +1138,84 @@ legend {
 .sorting-items a:active {
     text-decoration: none;
     color: var(--basic-red);
+}
+
+
+/* Main -- Filter -- Range-filter */
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 220px;
+    margin-top: 49px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    background-color: var(--basic-beige-dark);
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: var(--basic-gray-middle);
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: var(--basic-green-lightest);
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    box-sizing: content-box;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: var(--basic-gray-light-adv);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 140px;
+}
+
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-family: inherit;
+}
+
+.price-controls input {
+    width: 95px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background: var(--basic-beige-dark);
+    font-family: inherit;
+    font-size: inherit;
 }
 
 

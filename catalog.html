@@ -92,11 +92,19 @@
         <form action="https://echo.htmlacademy.ru" method="GET" oninput="costrangeoutputmin.value=costrangemin.value, costrangeoutputmax.value=costrangemax.value">
           <fieldset>
             <legend>ЦЕНА:</legend>
-            <div class="filt-sorting-inner">
-              <input type="range" min="0" max="40000" id="costrangemin" name="costrangemin">
-              <input type="range" min="0" max="40000" id="costrangemax" name="costrangemax">
+            <div class="filter-item">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+              </div>
+              <div class="price-controls">
+                <input type="number" name="min-price" value="0"> -
+                <input type="number" name="max-price" value="15000">
+              </div>
             </div>
-            <input class="price-input" type="text" name="costrangeoutputmin"> - <input class="price-input" type="text" name="costrangeoutputmax">
           </fieldset>
           <fieldset>
             <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -137,6 +145,7 @@
             </ul>
           </fieldset>
           <button class="filter-btn" type="submit">ПОКАЗАТЬ</button>
+
         </form>
       </section>
       <section class="sorting filt-sorting-inner">
