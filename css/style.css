@@ -1281,20 +1281,33 @@ legend {
     margin: 0;
 }
 
-.product-item p,
-.product-item-hover p {
-    margin: 0;
-}
-
 .sale {
     text-decoration-line: line-through;
     text-transform: uppercase;
     color: var(--basic-gray-light);
+    margin: 0;
 }
 
 .price {
+    position: relative;
+    margin: 0;
+    width: 122px;
+    height: 38px;
+    margin-right: 20px;
     color: var(--basic-white);
     background-color: var(--basic-red);
+}
+
+.price::after {
+    position: absolute;
+    content: "";
+    border: 19px solid var(--basic-black);
+    top: 0px;
+    right: -38px;
+    border-right-width: 0;
+    border-left-color: var(--basic-red);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
 }
 
 .new {
