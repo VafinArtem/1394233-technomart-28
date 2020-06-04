@@ -141,16 +141,20 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="power">
             <legend>ПИТАНИЕ:</legend>
             <ul class="filter-items">
               <li>
-                <input type="radio" name="power" value="battery" id="filter-battery" checked>
-                <label for="filter-battery">Аккумуляторные</label>
+                <label class="check">
+                <input class="radio-input" type="radio" name="power" value="battery" checked>
+                <span class="radio-box"></span>
+                Аккумуляторные</label>
               </li>
               <li>
-                <input type="radio" name="power" value="mains-power" id="filter-mains-power">
-                <label for="filter-mains-power">Сетевые</label>
+                <label class="check">
+                <input class="radio-input" type="radio" name="power" value="mains-power">
+                <span class="radio-box"></span>
+                Сетевые</label>
               </li>
             </ul>
           </fieldset>
