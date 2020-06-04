@@ -990,8 +990,8 @@ button.main-btn {
 
 .products-list {
     display: grid;
-    column-gap: 18px;
-    row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 18px;
     grid-template-columns: 220px 220px 220px;
 }
 
@@ -1244,7 +1244,7 @@ legend {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 .product-item {
@@ -1263,29 +1263,32 @@ legend {
     vertical-align: middle;
     padding: 0;
     margin: 0;
-    padding-top: 17px;
+    padding-top: 1px;
 }
 
 .product-inner {
     position: relative;
-    width: 185px;
-    min-height: 140px;
-    margin-bottom: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 184px;
+    height: 164px;
+    margin-bottom: 14px;
 }
 
 .img-inner {
-    width: 185px;
-    min-height: 140px;
+    width: 100%;
 }
 
 .btn-inner {
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 20px;
+    padding-top: 38px;
     display: none;
-    width: 185px;
-    min-height: 140px;
+    width: 184px;
+    height: 164px;
     background-color: var(--basic-white);
 }
 
@@ -1302,13 +1305,16 @@ legend {
     line-height: 20px;
     font-weight: bold;
     margin: 0;
+    margin-bottom: 8px;
 }
 
 .sale {
     text-decoration-line: line-through;
     text-transform: uppercase;
+    height: 18px;
     color: var(--basic-gray-light);
     margin: 0;
+    margin-bottom: 12px;
 }
 
 .price {
@@ -1316,7 +1322,9 @@ legend {
     margin: 0;
     width: 122px;
     height: 38px;
-    margin-right: 20px;
+    margin-right: 6px;
+    padding-top: 9px;
+    padding-left: 12px;
     color: var(--basic-white);
     background-color: var(--basic-red);
 }
