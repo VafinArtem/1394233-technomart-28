@@ -11,6 +11,7 @@
     --basic-gray-middle-adv: #cfcfcf;
     --basic-gray-light-adv: #ABABAB;
     --basic-gray-light: #A9A9A9;
+    --basic-gray-extra-light-adv: #F1F1F1;
     --basic-gray-extra-light: #C5C5C5;
     --basic-gray-lightest: #E5E5E5;
     --basic-gray-extra-lightest: #F1F5F7;
@@ -1912,7 +1913,7 @@ ul.pagination {
     height: 112px;
     left: 0;
     bottom: 0;
-    background-color: var(--basic-beige-dark);
+    background-color: var(--basic-gray-extra-light-adv);
     z-index: 0;
 }
 
@@ -1935,4 +1936,80 @@ ul.pagination {
 
 .popup {
     display: none;
+}
+
+
+/* Pop-up -- Add Cart */
+
+.add-cart-popup {
+    position: absolute;
+    border-top: solid 7px var(--basic-red);
+    background-color: var(--basic-white);
+    right: 50%;
+    margin-right: -310px;
+    top: 655px;
+    width: 620px;
+    height: 282px;
+    box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
+    z-index: 11;
+}
+
+.add-cart-popup-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 394px;
+    min-height: 227px;
+    margin: 0 auto;
+    margin-top: 39px;
+}
+
+.add-cart-popup p {
+    position: relative;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 48px;
+}
+
+.add-cart-popup p::before {
+    position: absolute;
+    content: "";
+    background-image: url('data:image/svg+xml,%3Csvg width="66" height="66" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M33 66c18.225 0 33-14.775 33-33S51.225 0 33 0 0 14.775 0 33s14.775 33 33 33z" fill="%2363A63E"/%3E%3Cpath d="M49.641 21.066a1.003 1.003 0 00-1.414 0L29.788 39.504a1.003 1.003 0 01-1.414 0l-8.14-8.139a1.003 1.003 0 00-1.414 0L15.285 34.9a1.003 1.003 0 000 1.414l13.089 13.09a1.003 1.003 0 001.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 000-1.414l-3.535-3.536z" fill="%23fff"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 66px;
+    left: -32px;
+    top: -19px;
+}
+
+.cart-btn-inner {
+    position: absolute;
+    width: 620px;
+    height: 112px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--basic-gray-extra-light-adv);
+    z-index: -1;
+}
+
+.add-cart-popup a {
+    width: 192px;
+}
+
+.continue {
+    width: 192px;
+    height: 38px;
+    border: none;
+    background-color: var(--basic-white);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0;
 }
