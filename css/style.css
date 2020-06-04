@@ -562,7 +562,7 @@ h2 {
 .linear-title {
     color: var(--basic-gray-dark);
     margin-left: 30px;
-    margin-top: 31px;
+    margin-top: 27px;
 }
 
 .text {
@@ -990,7 +990,8 @@ button.main-btn {
 
 .products-list {
     display: grid;
-    gap: 20px;
+    column-gap: 18px;
+    row-gap: 20px;
     grid-template-columns: 220px 220px 220px;
 }
 
@@ -1077,9 +1078,22 @@ fieldset {
 }
 
 legend {
+    padding-top: 12px;
+    padding-bottom: 11px;
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
+}
+
+.cost,
+.manufacturers {
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--basic-gray-lightest);
+}
+
+.manufacturers legend {
+    padding-top: 5px;
 }
 
 .filter ul {
@@ -1092,6 +1106,11 @@ legend {
     font-size: 15px;
     line-height: 19px;
     text-transform: uppercase;
+}
+
+.filter-items li {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .filter-btn {
@@ -1157,7 +1176,7 @@ legend {
 .range-controls {
     position: relative;
     height: 80px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     padding-top: 39px;
     background-color: var(--basic-beige-dark);
     border-radius: 5px;
@@ -1224,10 +1243,16 @@ legend {
 .products ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    margin-top: 8px;
 }
 
 .product-item,
 .product-item-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     border: 1px solid var(--basic-gray-lightest);
     width: 220px;
     height: 318px;
@@ -1239,6 +1264,13 @@ legend {
     vertical-align: middle;
     padding: 0;
     margin: 0;
+    padding-top: 17px;
+}
+
+.img-inner {
+    width: 185px;
+    min-height: 140px;
+    margin-bottom: 23px;
 }
 
 .product-item h3,
@@ -1246,6 +1278,12 @@ legend {
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
+    margin: 0;
+}
+
+.product-item p,
+.product-item-hover p {
+    margin: 0;
 }
 
 .sale {
