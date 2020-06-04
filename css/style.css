@@ -1146,6 +1146,18 @@ legend {
     height: 38px;
     background-color: var(--basic-white);
     border: solid 1px var(--basic-gray-lightest);
+    outline: none;
+}
+
+button.filter-btn:hover,
+button.filter-btn:focus {
+    border-color: var(--basic-gray-extra-light);
+    outline: none;
+}
+
+button.filter-btn:active {
+    border-color: var(--basic-red);
+    outline: none;
 }
 
 .sorting {
