@@ -1109,6 +1109,7 @@ legend {
 }
 
 .filter-items li {
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1157,6 +1158,60 @@ legend {
 .sorting-items a:active {
     text-decoration: none;
     color: var(--basic-red);
+}
+
+
+/* Main -- Filter -- Checkbox */
+
+.check {
+    padding-left: 35px;
+}
+
+.check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check-box {
+    position: absolute;
+    margin-left: 23px;
+    width: 23px;
+    height: 23px;
+    left: -22px;
+    top: 7px;
+    background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17c1.65 0 3 1.35 3 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm18 3c0-.542-.458-1-1-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3z" fill="%23C5C5C5"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+}
+
+.check-input:checked+.check-box {
+    width: 28px;
+    height: 23px;
+    background-image: url('data:image/svg+xml,%3Csvg width="28" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7.447 7.486l-2.829 2.829 7.783 7.783L26.333 4.166l-2.828-2.829-11.104 11.102-4.954-4.953z" fill="%23C5C5C5"/%3E%3Cpath d="M21.162 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1H20.07L21.655.415A2.96 2.96 0 0020.162 0h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" fill="%23C5C5C5"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+}
+
+.check-input:focus+.check-box,
+.check-input:hover+.check-box {
+    background-image: url('data:image/svg+xml,%3Csvg width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3.162 0h17c1.65 0 3 1.35 3 3v17c0 1.65-1.35 3-3 3h-17c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm18 3c0-.542-.458-1-1-1h-17c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3z" fill="%23B5B5B5"/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+}
+
+.check-input:checked:focus+.check-box,
+.check-input:checked:hover+.check-box {
+    background-image: url('data:image/svg+xml,%3Csvg width="27" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M7.447 7.486l-2.829 2.829 7.783 7.783L26.333 4.166l-2.828-2.829-11.104 11.102-4.954-4.953z" fill="%23B5B5B5"/%3E%3Cpath d="M21.162 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1H20.07L21.655.415A2.96 2.96 0 0020.162 0h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" fill="%23B5B5B5"/%3E%3C/svg%3E');
+    width: 28px;
+    height: 23px;
+    background-repeat: no-repeat;
+}
+
+.check-input:disabled+.check-box {
+    background-image: url('data:image/svg+xml,%3Csvg width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3.162 0h17c1.65 0 3 1.35 3 3v17c0 1.65-1.35 3-3 3h-17c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm18 3c0-.542-.458-1-1-1h-17c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3z" fill="%23B5B5B5" opacity=".3"/%3E%3C/svg%3E%3Csvg width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3.162 0h17c1.65 0 3 1.35 3 3v17c0 1.65-1.35 3-3 3h-17c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm18 3c0-.542-.458-1-1-1h-17c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3z" fill="%23B5B5B5" opacity=".3"/%3E%3C/svg%3E');
+}
+
+.check-input:checked:disabled+.check-box {
+    background-image: url('data:image/svg+xml,%3Csvg width="27" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cg opacity=".3" fill="%23B5B5B5"%3E%3Cpath d="M7.447 7.486l-2.829 2.829 7.783 7.783L26.333 4.166l-2.828-2.829-11.104 11.102-4.954-4.953z"/%3E%3Cpath d="M21.162 20c0 .542-.458 1-1 1h-17c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1H20.07L21.655.415A2.96 2.96 0 0020.162 0h-17c-1.65 0-3 1.35-3 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/%3E%3C/g%3E%3C/svg%3E');
 }
 
 
