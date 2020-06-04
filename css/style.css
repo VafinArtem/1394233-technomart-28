@@ -1392,10 +1392,12 @@ legend {
 }
 
 .pagination-box {
+    margin-top: 30px;
     display: flex;
+    align-items: flex-end;
 }
 
-.pagination {
+ul.pagination {
     display: flex;
     margin: 0;
 }
@@ -1410,7 +1412,7 @@ legend {
 }
 
 .pagination-item {
-    display: inline-table;
+    display: table;
     width: 38px;
     height: 38px;
     margin-right: 10px;
@@ -1429,7 +1431,7 @@ legend {
 }
 
 .pagination-item-next {
-    display: inline-table;
+    display: table;
     width: 140px;
     height: 38px;
 }
