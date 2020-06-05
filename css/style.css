@@ -1692,6 +1692,7 @@ ul.pagination {
 
 .footer-nav-items a:active {
     opacity: 0.5;
+    text-decoration: none;
 }
 
 .subnav-items a {
@@ -1708,6 +1709,7 @@ ul.pagination {
 .subnav-items a:active {
     color: var(--special-gold);
     opacity: 0.5;
+    text-decoration: none;
 }
 
 
@@ -1759,6 +1761,7 @@ ul.pagination {
 .e-mail a:active,
 .site a:active {
     color: var(--basic-red);
+    text-decoration: none;
 }
 
 
