@@ -815,11 +815,36 @@ h2 {
     margin: 0;
 }
 
-.partners-items li {
-    border: solid 1px var(--basic-gray-double-estra-light);
+.partners-items a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 145px;
-    text-align: center;
+    border: solid 1px var(--basic-gray-double-estra-light);
+}
+
+.partners-items a:hover,
+.partners-items a:focus {
+    box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
+}
+
+.partners-items a:active {
+    opacity: 0.5;
+    box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
+}
+
+.intersckol {
+    padding-bottom: 15px;
+}
+
+.metabo {
+    padding-bottom: 9px;
+}
+
+.dewalt,
+.makkita {
+    padding-bottom: 6px;
 }
 
 
