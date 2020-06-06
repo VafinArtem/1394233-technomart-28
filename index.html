@@ -80,13 +80,30 @@
         <h3>Доставка</h3>
         <a href="#" class="offer-button" aria-label="Информацией о доставке">Бесплатно</a>
       </div>
-      <div class="slider-box">
-        <div class="slider">
-          <!-- Это слайдер -->
-          <h3>Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
-          <a href="catalog.html" class="main-btn">ОТКРЫТЬ КАТАЛОГ</a>
-          <img src="img/perforators.jpg" width="620" height="266" alt="Строитель пробивает отверстие в стене с помощью перфоратора фирмы Bosch">
+      <div class="slider-wrapper slider-wrapper-perforator">
+        <ul class="slider-list">
+          <li class="slider-item slide-active">
+            <div class="slider-desc">
+              <h3 class="slide-title">Перфораторы</h3>
+              <p class="slide-desc">Настоящие мужские игрушки</p>
+            </div>
+            <a href="catalog.html" class="main-btn slide-button">ОТКРЫТЬ КАТАЛОГ</a>
+          </li>
+          <li class="slider-item slide">
+            <div class="slider-desc">
+              <h3 class="slide-title">Дрели</h3>
+              <p class="slide-desc">Соседям на радость!</p>
+            </div>
+            <a href="catalog.html" class="main-btn slide-button">ОТКРЫТЬ КАТАЛОГ</a>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд" class="current"></button>
+        </div>
+        <div class="slider-arrows">
+          <button type="button" aria-label="Предыдущий слайд" class="prev"></button>
+          <button type="button" aria-label="Следующий слайд" class="next"></button>
         </div>
       </div>
     </section>
