@@ -642,6 +642,7 @@ h2 {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
+    margin: 0;
 }
 
 .offer-button {
@@ -653,6 +654,8 @@ h2 {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-white);
+    text-align: center;
+    padding-top: 10px;
 }
 
 .offer-button:hover,
@@ -665,30 +668,51 @@ h2 {
 }
 
 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 300px;
     min-height: 123px;
+    padding-left: 23px;
+    padding-top: 15px;
+    padding-bottom: 14px;
 }
 
 .materials {
     background-color: var(--special-gold-extra-dark);
+    background-image: url(../img/icon-materials.svg);
+    background-repeat: no-repeat;
+    background-position: 213px 32px
 }
 
 .tools {
     background-color: var(--special-blue-normal);
+    background-image: url(../img/icon-tools.svg);
+    background-repeat: no-repeat;
+    background-position: 194px 35px;
 }
 
 .technology {
     background-color: var(--special-purple-normal);
+    background-image: url(../img/icon-tech.svg);
+    background-repeat: no-repeat;
+    background-position: 191px 32px;
 }
 
 .discount {
     background-color: var(--special-green-normal);
+    background-image: url(../img/icon-discount.svg);
+    background-repeat: no-repeat;
+    background-position: 196px 27px;
 }
 
 .delivery {
-    background-color: var(--special-gold-dark);
     grid-row: 3/3;
     grid-column: 3/3;
+    background-color: var(--special-gold-dark);
+    background-image: url(../img/icon-delivery.svg);
+    background-repeat: no-repeat;
+    background-position: 191px 33px;
 }
 
 
