@@ -856,7 +856,7 @@ h2 {
     grid-row: min-content min-content 1fr;
     grid-column: 240px 1fr;
     column-gap: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
 }
 
 .services h2 {
@@ -993,8 +993,6 @@ h2 {
 .about-us h2,
 .contacts h2 {
     margin: 0;
-    margin-top: 23px;
-    margin-bottom: 0px;
 }
 
 .about-us p,
