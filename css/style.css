@@ -1769,6 +1769,13 @@ ul.pagination {
     height: 38px;
 }
 
+.pagination-current {
+    pointer-events: none;
+    border: var(--basic-red);
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
+
 
 /* Main -- About Products */
 
