@@ -1194,6 +1194,7 @@ button.main-btn {
     line-height: 13px;
     text-transform: uppercase;
     color: inherit;
+    cursor: pointer;
 }
 
 .breadcrumbs-items {
@@ -1319,6 +1320,7 @@ legend {
     background-color: var(--basic-white);
     border: solid 1px var(--basic-gray-lightest);
     outline: none;
+    cursor: pointer;
 }
 
 button.filter-btn:hover,
@@ -1360,6 +1362,7 @@ button.filter-btn:active {
     opacity: 0.3;
     font-size: 13px;
     line-height: 17px;
+    outline: none;
 }
 
 .sorting-items a:hover,
@@ -1408,6 +1411,7 @@ button.filter-btn:active {
 
 .check {
     padding-left: 35px;
+    cursor: pointer;
 }
 
 .check-input,
@@ -1427,6 +1431,7 @@ button.filter-btn:active {
     top: 7px;
     background-image: url('data:image/svg+xml,%3Csvg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M3 0h17c1.65 0 3 1.35 3 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm18 3c0-.542-.458-1-1-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3z" fill="%23C5C5C5"/%3E%3C/svg%3E');
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .check-input:checked+.check-box {
@@ -1470,6 +1475,7 @@ button.filter-btn:active {
     top: 8px;
     background-image: url('data:image/svg+xml,%3Csvg width="26" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M.162 12.5C.162 5.597 5.76 0 12.662 0s12.5 5.597 12.5 12.5S19.565 25 12.662 25 .162 19.403.162 12.5zm21 0c0-4.687-3.813-8.5-8.5-8.5-4.687 0-8.5 3.813-8.5 8.5 0 4.687 3.813 8.5 8.5 8.5 4.687 0 8.5-3.813 8.5-8.5z" fill="%23C5C5C5"/%3E%3C/svg%3E');
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .radio-input:checked+.radio-box {
@@ -1764,6 +1770,7 @@ ul.pagination {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 13px;
     line-height: 18px;
+    outline: none;
 }
 
 .pagination-item {
@@ -2250,4 +2257,5 @@ ul.pagination {
     line-height: 18px;
     text-transform: uppercase;
     padding: 0;
+    cursor: pointer;
 }
