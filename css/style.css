@@ -170,6 +170,7 @@ img {
     min-width: 150px;
     position: relative;
     padding-right: 7px;
+    outline: none;
 }
 
 .submenu-mark::before {
@@ -186,7 +187,10 @@ img {
 
 .submenu-mark:hover::before,
 .submenu-cart:hover::before,
-.submenu-cart-notempty:hover::before {
+.submenu-cart-notempty:hover::before,
+.submenu-mark:focus::before,
+.submenu-cart:focus::before,
+.submenu-cart-notempty:focus::before {
     opacity: 1;
 }
 
@@ -195,6 +199,7 @@ img {
     min-width: 136px;
     position: relative;
     padding-left: 14px;
+    outline: none;
 }
 
 .submenu-cart::before,
@@ -212,6 +217,7 @@ img {
 
 .submenu-order {
     width: 150px;
+    outline: none;
 }
 
 .submenu-order:hover,
@@ -382,6 +388,7 @@ img {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-gray-dark);
+    outline: none;
 }
 
 .personel-links a:hover,
@@ -394,7 +401,7 @@ img {
 }
 
 .personel-name {
-    display: inline-block;
+    display: block;
     position: relative;
     padding-left: 35px;
     padding-top: 3px;
@@ -402,6 +409,7 @@ img {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    outline: none;
 }
 
 .personel-name svg {
@@ -430,6 +438,8 @@ img {
     padding: 0;
     margin-bottom: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .login-btn {
@@ -465,6 +475,8 @@ img {
     background-color: var(--basic-white);
     margin-left: 14px;
     margin-top: 3px;
+    cursor: pointer;
+    outline: none;
 }
 
 .logout-btn path,
@@ -473,7 +485,9 @@ img {
 }
 
 .logout-btn:hover path,
-.personel-name:hover path {
+.personel-name:hover path,
+.logout-btn:focus path,
+.personel-name:focus path {
     fill: var(--basic-gray-normal);
 }
 
@@ -525,6 +539,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     padding-top: 16px;
+    outline: none;
 }
 
 .nav-items a:hover,
@@ -1201,7 +1216,7 @@ button.main-btn {
     background-image: url(../img/icon-home.svg);
     width: 14px;
     height: 12px;
-    margin-top: 1px;
+    margin-top: -1px;
 }
 
 
