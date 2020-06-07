@@ -1581,13 +1581,23 @@ button.filter-btn:active {
 
 .price-controls input {
     width: 95px;
-    padding: 10px;
+    height: 38px;
     text-align: center;
     border: none;
     border-radius: 5px;
     background: var(--basic-beige-dark);
     font-family: inherit;
     font-size: inherit;
+    padding: 0 10px;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 
