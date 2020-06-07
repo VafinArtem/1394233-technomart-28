@@ -1776,7 +1776,7 @@ ul.pagination {
     display: flex;
     flex-direction: column;
     margin-top: 59px;
-    padding-bottom: 67px;
+    padding-bottom: 69px;
     padding-top: 64px;
 }
 
@@ -1860,12 +1860,12 @@ ul.pagination {
     justify-content: flex-end;
     padding: 0;
     margin: 0;
-    padding-top: 37px;
+    padding-top: 36px;
 }
 
 .footer-nav-items li:not(:first-child),
 .subnav-items li:not(:first-child) {
-    margin-left: 60px;
+    margin-left: 59px;
 }
 
 .footer-nav-items a {
