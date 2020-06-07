@@ -917,6 +917,7 @@ h2 {
     width: 220px;
     height: 145px;
     border: solid 1px var(--basic-gray-double-estra-light);
+    outline: none;
 }
 
 .partners-items a:hover,
@@ -1001,6 +1002,8 @@ h2 {
     text-align: left;
     padding-left: 23px;
     box-shadow: 0px 1px 0px var(--basic-gray-extra-dark), inset 0px 1px 0px var(--basic-gray-dark-adv);
+    outline: none;
+    cursor: pointer;
 }
 
 .services button:hover,
@@ -1125,6 +1128,7 @@ h2 {
 button.main-btn {
     padding: 0;
     width: inherit;
+    cursor: pointer;
 }
 
 
@@ -1897,6 +1901,7 @@ ul.pagination {
     color: var(--basic-gray-extra-lightest);
     font-size: 18px;
     line-height: 24px;
+    outline: none;
 }
 
 .footer-nav-items a:hover,
@@ -1913,6 +1918,7 @@ ul.pagination {
     color: var(--special-gold);
     font-size: 18px;
     line-height: 24px;
+    outline: none;
 }
 
 .subnav-items a:hover,
@@ -1963,6 +1969,7 @@ ul.pagination {
 .e-mail a,
 .site a {
     color: var(--special-gold);
+    outline: none;
 }
 
 .e-mail a:hover,
@@ -2013,6 +2020,7 @@ ul.pagination {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 50%;
+    outline: none;
 }
 
 .vk {
@@ -2068,6 +2076,7 @@ ul.pagination {
     width: 21px;
     height: 21px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
