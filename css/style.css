@@ -2227,12 +2227,14 @@ ul.pagination {
 /* Pop-up -- Add Cart */
 
 .add-cart-popup {
-    position: absolute;
+    position: fixed;
     border-top: solid 7px var(--basic-red);
     background-color: var(--basic-white);
-    right: 50%;
-    margin-right: -310px;
-    top: 655px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     width: 620px;
     height: 282px;
     box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
