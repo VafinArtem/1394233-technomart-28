@@ -646,7 +646,7 @@ h2 {
 
 .main-btn {
     display: block;
-    height: 38px;
+    min-height: 38px;
     padding-top: 11px;
     font-family: inherit;
     background-color: var(--basic-red);
@@ -1745,7 +1745,7 @@ input::-webkit-inner-spin-button {
     line-height: 18px;
     text-transform: uppercase;
     width: 135px;
-    height: 38px;
+    min-height: 38px;
     outline: none;
     cursor: pointer;
 }
@@ -2197,8 +2197,7 @@ ul.pagination {
     width: 460px;
     height: 114px;
     border: 2px solid var(--basic-gray-extra-light);
-    padding-left: 12px;
-    padding-top: 12px;
+    padding: 12px;
     border-radius: 2px;
     margin-bottom: 74px;
     resize: none;
