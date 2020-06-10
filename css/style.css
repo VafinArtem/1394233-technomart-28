@@ -2098,15 +2098,18 @@ ul.pagination {
 /* Pop-up -- Map */
 
 .popup-map {
-    position: absolute;
+    position: fixed;
     border-top: solid 7px var(--basic-red);
     background-color: var(--basic-white);
-    right: 50%;
-    margin-right: -485px;
-    top: 2335px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     width: 970px;
     height: 477px;
     box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
+    z-index: 100;
 }
 
 .popup-map iframe {
@@ -2137,17 +2140,20 @@ ul.pagination {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     border-top: solid 7px var(--basic-red);
     background-color: var(--basic-white);
-    right: 50%;
-    margin-right: -310px;
-    top: 2369px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     width: 620px;
     height: 430px;
     box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 13px;
+    z-index: 100;
 }
 
 .popup-writeus-inner {
