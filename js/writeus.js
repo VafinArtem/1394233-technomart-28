@@ -11,23 +11,27 @@ let storageName = "";
 let storageEmail = "";
 
 try {
-    storageName = localStorage.getItem("name");
-    storageEmail = localStorage.getItem("email");
+    storageName = localStorage.getItem("userName");
 } catch (err) {
     isStorageSupport = false;
 }
 
+try {
+    storageEmail = localStorage.getItem("userEmail");
+} catch (err) {
+    isStorageSupport = false;
+}
 
-writeUsButton.addEventListener("click", function() {
+writeUsButton.addEventListener("click", function(evt) {
     writeUsPopup.classList.add("popup");
 
-    if (storageName) {
+    if (storageName && storageEmail) {
         writeUsName.value = storageName;
-        writeUsEmail.focus();
-    } else if (storageName) {
-        writeUsEmail.value = storageName;
+        writeUsEmail.value = storageEmail;
         writeUsMessage.focus();
-    } else writeUsName.focus();
+    } else {
+        writeUsName.focus();
+    }
 });
 
 writeUsClose.addEventListener("click", function() {
@@ -43,8 +47,8 @@ writeUsForm.addEventListener("submit", function(evt) {
         writeUsPopup.classList.add("write-us-error");
     } else {
         if (isStorageSupport) {
-            localStorage.setItem("name", writeUsName.value);
-            localStorage.setItem("email", writeUsEmail.value);
+            localStorage.setItem("userName", writeUsName.value);
+            localStorage.setItem("userEmail", writeUsEmail.value);
         }
     }
 });
