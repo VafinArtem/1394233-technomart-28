@@ -33,11 +33,15 @@ writeUsButton.addEventListener("click", function() {
 
 writeUsCloses[1].addEventListener("click", function() {
     writeUsPopup.classList.remove("popup");
+    writeUsPopup.classList.remove("write-us-error");
 });
 
 writeUsForm.addEventListener("submit", function(evt) {
     if (!writeUsName.value || !writeUsEmail.value || !writeUsMessage.value) {
         evt.preventDefault();
+        writeUsPopup.classList.remove("write-us-error");
+        writeUsPopup.offsetWidth = writeUsPopup.offsetWidth;
+        writeUsPopup.classList.add("write-us-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("name", writeUsName.value);
@@ -51,6 +55,7 @@ window.addEventListener("keydown", function(evt) {
         if (writeUsPopup.classList.contains("popup")) {
             evt.preventDefault();
             writeUsPopup.classList.remove("popup");
+            writeUsPopup.classList.remove("write-us-error");
         }
     }
 });
