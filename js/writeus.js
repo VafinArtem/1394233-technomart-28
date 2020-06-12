@@ -24,11 +24,10 @@ writeUsButton.addEventListener("click", function() {
     if (storageName) {
         writeUsName.value = storageName;
         writeUsEmail.focus();
-        writeUsEmail.value = storageEmail;
+    } else if (storageName) {
+        writeUsEmail.value = storageName;
         writeUsMessage.focus();
-    } else {
-        writeUsName.focus();
-    }
+    } else writeUsName.focus();
 });
 
 writeUsClose.addEventListener("click", function() {
