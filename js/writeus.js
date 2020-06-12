@@ -1,6 +1,6 @@
 let writeUsButton = document.querySelector(".writeus-btn")
 let writeUsPopup = document.querySelector(".popup-writeus")
-let writeUsCloses = document.querySelectorAll(".close-btn")
+let writeUsClose = writeUsPopup.querySelector(".close-btn")
 let writeUsForm = writeUsPopup.querySelector(".write-us-form");
 let writeUsName = writeUsPopup.querySelector(".write-us-name")
 let writeUsEmail = writeUsPopup.querySelector(".writeus-email")
@@ -31,7 +31,7 @@ writeUsButton.addEventListener("click", function() {
     }
 });
 
-writeUsCloses[1].addEventListener("click", function() {
+writeUsClose.addEventListener("click", function() {
     writeUsPopup.classList.remove("popup");
     writeUsPopup.classList.remove("write-us-error");
 });
