@@ -19,7 +19,7 @@ try {
 
 
 writeUsButton.addEventListener("click", function() {
-    writeUsPopup.classList.remove("popup");
+    writeUsPopup.classList.add("popup");
 
     if (storageName) {
         writeUsName.value = storageName;
@@ -32,7 +32,7 @@ writeUsButton.addEventListener("click", function() {
 });
 
 writeUsCloses[1].addEventListener("click", function() {
-    writeUsPopup.classList.add("popup");
+    writeUsPopup.classList.remove("popup");
 });
 
 writeUsForm.addEventListener("submit", function(evt) {
@@ -42,6 +42,15 @@ writeUsForm.addEventListener("submit", function(evt) {
         if (isStorageSupport) {
             localStorage.setItem("name", writeUsName.value);
             localStorage.setItem("email", writeUsEmail.value);
+        }
+    }
+});
+
+window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+        if (writeUsPopup.classList.contains("popup")) {
+            evt.preventDefault();
+            writeUsPopup.classList.remove("popup");
         }
     }
 });

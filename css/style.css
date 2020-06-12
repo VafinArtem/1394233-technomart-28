@@ -2098,6 +2098,7 @@ ul.pagination {
 /* Pop-up -- Map */
 
 .popup-map {
+    display: none;
     position: fixed;
     border-top: solid 7px var(--basic-red);
     background-color: var(--basic-white);
@@ -2137,7 +2138,7 @@ ul.pagination {
 /* Pop-up -- Write Us */
 
 .popup-writeus {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -2227,7 +2228,7 @@ ul.pagination {
 }
 
 .popup {
-    display: none;
+    display: flex;
 }
 
 
