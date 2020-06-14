@@ -1,10 +1,10 @@
-let writeUsButton = document.querySelector(".writeus-btn")
-let writeUsPopup = document.querySelector(".popup-writeus")
-let writeUsClose = writeUsPopup.querySelector(".close-btn")
+let writeUsButton = document.querySelector(".writeus-btn");
+let writeUsPopup = document.querySelector(".popup-writeus");
+let writeUsClose = writeUsPopup.querySelector(".close-btn");
 let writeUsForm = writeUsPopup.querySelector(".write-us-form");
-let writeUsName = writeUsPopup.querySelector(".write-us-name")
-let writeUsEmail = writeUsPopup.querySelector(".writeus-email")
-let writeUsMessage = writeUsPopup.querySelector(".write-us-message")
+let writeUsName = writeUsPopup.querySelector(".write-us-name");
+let writeUsEmail = writeUsPopup.querySelector(".writeus-email");
+let writeUsMessage = writeUsPopup.querySelector(".write-us-message");
 
 let isStorageSupport = true;
 let storageName = "";
