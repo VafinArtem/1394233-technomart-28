@@ -10,3 +10,12 @@ mapButton.addEventListener("click", function(evt) {
 mapClose.addEventListener("click", function() {
     mapPopup.classList.remove("popup");
 });
+
+window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("popup")) {
+            evt.preventDefault();
+            mapPopup.classList.remove("popup");
+        }
+    }
+});
