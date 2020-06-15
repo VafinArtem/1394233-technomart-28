@@ -484,6 +484,7 @@ img {
 }
 
 .logout-btn {
+    display: block;
     border: 0;
     width: 20px;
     height: 17px;
@@ -1211,7 +1212,7 @@ button.main-btn {
 
 .breadcrumbs {
     grid-column: 1/-1;
-    margin-top: 26px
+    margin-top: 24px
 }
 
 .breadcrumbs ul {
@@ -1318,8 +1319,8 @@ legend {
 }
 
 .cost legend {
-    padding-top: 12px;
-    padding-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 12px;
 }
 
 .power legend {
@@ -1380,7 +1381,7 @@ button.filter-btn:active {
     display: flex;
     justify-content: flex-end;
     width: 443px;
-    margin-right: 17px;
+    margin-right: 18px;
 }
 
 .sorting-items li:not(:first-child):not(:last-child) {
@@ -1564,7 +1565,7 @@ button.filter-btn:active {
     position: relative;
     height: 80px;
     margin-bottom: 10px;
-    padding-top: 41px;
+    padding-top: 39px;
     background-color: var(--basic-beige-dark);
     border-radius: 5px;
     padding-right: 20px;
@@ -1606,11 +1607,24 @@ button.filter-btn:active {
 }
 
 .price-controls {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 17px;
     font-family: inherit;
+}
+
+.price-controls::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background-color: var(--basic-black);
+    right: 50%;
+    margin-right: -5px;
+    top: 18px;
 }
 
 .price-controls input {
@@ -1658,7 +1672,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 18px;
     vertical-align: middle;
     padding: 0;
@@ -1727,7 +1741,7 @@ input::-webkit-inner-spin-button {
     width: 122px;
     height: 38px;
     margin-right: 6px;
-    padding-top: 9px;
+    padding-top: 11px;
     padding-left: 12px;
     color: var(--basic-white);
     background-color: var(--basic-red);
@@ -1770,6 +1784,7 @@ input::-webkit-inner-spin-button {
 }
 
 .btn-cart {
+    display: block;
     color: var(--basic-white);
     border: none;
     border-radius: 2px;
@@ -1868,7 +1883,7 @@ ul.pagination {
     flex-direction: column;
     margin-top: 59px;
     padding-bottom: 69px;
-    padding-top: 64px;
+    padding-top: 66px;
 }
 
 .about-products h2,
