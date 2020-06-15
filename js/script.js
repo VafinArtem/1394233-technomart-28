@@ -1,7 +1,7 @@
-let cartButtons = document.querySelectorAll(".btn-cart")
-let cartPopup = document.querySelector(".add-cart-popup")
-let cartClose = cartPopup.querySelector(".close-btn")
-let cartContinue = cartPopup.querySelector(".continue")
+let cartButtons = document.querySelectorAll(".btn-cart");
+let cartPopup = document.querySelector(".add-cart-popup");
+let cartClose = cartPopup.querySelector(".close-btn");
+let cartContinue = cartPopup.querySelector(".continue");
 
 for (let cartButton of cartButtons) {
     cartButton.addEventListener("click", function(evt) {
@@ -25,9 +25,9 @@ let writeUsForm = writeUsPopup.querySelector(".write-us-form");
 let writeUsName = writeUsPopup.querySelector(".write-us-name");
 let writeUsEmail = writeUsPopup.querySelector(".writeus-email");
 let writeUsMessage = writeUsPopup.querySelector(".write-us-message");
-let mapButton = document.querySelector(".map-link")
-let mapPopup = document.querySelector(".popup-map")
-let mapClose = mapPopup.querySelector(".close-btn")
+let mapButton = document.querySelector(".map-link");
+let mapPopup = document.querySelector(".popup-map");
+let mapClose = mapPopup.querySelector(".close-btn");
 
 let isStorageSupport = true;
 let storageName = "";
@@ -37,13 +37,13 @@ try {
     storageName = localStorage.getItem("userName");
 } catch (err) {
     isStorageSupport = false;
-}
+};
 
 try {
     storageEmail = localStorage.getItem("userEmail");
 } catch (err) {
     isStorageSupport = false;
-}
+};
 
 writeUsButton.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -55,7 +55,7 @@ writeUsButton.addEventListener("click", function(evt) {
         writeUsMessage.focus();
     } else {
         writeUsName.focus();
-    }
+    };
 });
 
 writeUsClose.addEventListener("click", function() {
@@ -73,8 +73,8 @@ writeUsForm.addEventListener("submit", function(evt) {
         if (isStorageSupport) {
             localStorage.setItem("userName", writeUsName.value);
             localStorage.setItem("userEmail", writeUsEmail.value);
-        }
-    }
+        };
+    };
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -84,9 +84,9 @@ window.addEventListener("keydown", function(evt) {
             writeUsPopup.classList.remove("popup");
             writeUsPopup.classList.remove("write-us-error");
             mapPopup.classList.remove("popup");
-            cartPopup.classList.remove("popup")
-        }
-    }
+            cartPopup.classList.remove("popup");
+        };
+    };
 });
 
 mapButton.addEventListener("click", function(evt) {

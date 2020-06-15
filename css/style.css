@@ -802,7 +802,7 @@ h2 {
 }
 
 .slider-item {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 266px;
@@ -864,10 +864,6 @@ h2 {
 
 .slider-controls .current {
     background-color: var(--basic-red);
-}
-
-.slide {
-    display: none;
 }
 
 .slide-active {
@@ -1070,6 +1066,7 @@ h2 {
 }
 
 .desc-delivery {
+    display: none;
     background-image: url(../img/bg-delivery.png);
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -1087,6 +1084,10 @@ h2 {
     background-image: url(../img/bg-credit.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+
+.serv-item-active {
+    display: block;
 }
 
 .items-desc h3 {
@@ -2293,7 +2294,7 @@ ul.pagination {
     width: 620px;
     height: 282px;
     box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
-    z-index: 11;
+    z-index: 100;
 }
 
 .add-cart-popup-inner {

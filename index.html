@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -88,7 +88,7 @@
             </div>
             <a href="catalog.html" class="main-btn slide-button">ОТКРЫТЬ КАТАЛОГ</a>
           </li>
-          <li class="slider-item slide">
+          <li class="slider-item">
             <div class="slider-desc">
               <h3 class="slide-title">Дрели</h3>
               <p class="slide-desc">Соседям на радость!</p>
@@ -97,8 +97,8 @@
           </li>
         </ul>
         <div class="slider-controls">
-          <button type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд" class="current"></button>
+          <button type="button" aria-label="Первый слайд" class="first"></button>
+          <button type="button" aria-label="Второй слайд" class="second current"></button>
         </div>
         <div class="slider-arrows">
           <button type="button" aria-label="Предыдущий слайд" class="prev"></button>
@@ -232,7 +232,7 @@
           <li><button type="button">Кредит</button></li>
         </ul>
         <ul class="items-desc">
-          <li class="desc-delivery">
+          <li class="desc-delivery serv-item-active">
             <h3>Доставка</h3>
             <p class="text">
               Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
@@ -386,8 +386,7 @@
     </div>
     <div class="cart-btn-inner"></div>
   </div>
-
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
