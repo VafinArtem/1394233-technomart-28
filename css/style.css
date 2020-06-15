@@ -533,8 +533,8 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 23px;
+    padding-right: 17px;
     box-shadow: inset 0px -5px 0px var(--basic-gray-extra-dark);
 }
 
