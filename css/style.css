@@ -433,10 +433,6 @@ img {
     top: 3px;
 }
 
-.personel-name path {
-    fill: var(--basic-gray-extra-light);
-}
-
 .personel-name:active {
     color: var(--basic-gray-extra-light);
 }
@@ -492,11 +488,12 @@ img {
     margin-left: 14px;
     margin-top: 3px;
     cursor: pointer;
-    outline: none;
 }
 
 .logout-btn path,
-.personel-name path {
+.personel-name path,
+.personel-name:active .personel-name-inner,
+.logout-btn:active .logout-btn-inner {
     fill: var(--basic-gray-extra-light);
 }
 
@@ -509,10 +506,6 @@ img {
 
 .logout-btn:hover,
 .logout-btn:focus {
-    color: var(--basic-gray-normal);
-}
-
-.logout-btn:active {
     color: var(--basic-gray-normal);
 }
 
@@ -1391,9 +1384,7 @@ button.filter-btn:active {
 
 .sorting-item {
     display: block;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: var(--basic-red);
+    border-bottom: 1px dotted var(--basic-red);
     color: var(--basic-black);
     opacity: 0.3;
     font-size: 13px;
@@ -1404,13 +1395,11 @@ button.filter-btn:active {
 .sorting-item:hover,
 .sorting-item:focus {
     opacity: 1;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: var(--basic-red);
+    border-bottom: 1px solid var(--basic-red);
 }
 
 .sorting-item:active {
-    text-decoration: none;
+    border: none;
     color: var(--basic-red);
 }
 
