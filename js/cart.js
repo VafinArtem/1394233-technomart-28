@@ -5,6 +5,7 @@ let cartContinue = cartPopup.querySelector(".continue")
 
 for (let cartButton of cartButtons) {
     cartButton.addEventListener("click", function(evt) {
+        evt.preventDefault();
         cartPopup.classList.add("popup");
     });
 };

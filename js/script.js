@@ -1,3 +1,23 @@
+let cartButtons = document.querySelectorAll(".btn-cart")
+let cartPopup = document.querySelector(".add-cart-popup")
+let cartClose = cartPopup.querySelector(".close-btn")
+let cartContinue = cartPopup.querySelector(".continue")
+
+for (let cartButton of cartButtons) {
+    cartButton.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        cartPopup.classList.add("popup");
+    });
+};
+
+cartClose.addEventListener("click", function() {
+    cartPopup.classList.remove("popup");
+});
+
+cartContinue.addEventListener("click", function() {
+    cartPopup.classList.remove("popup");
+});
+
 let writeUsButton = document.querySelector(".writeus-btn");
 let writeUsPopup = document.querySelector(".popup-writeus");
 let writeUsClose = writeUsPopup.querySelector(".close-btn");
@@ -5,10 +25,6 @@ let writeUsForm = writeUsPopup.querySelector(".write-us-form");
 let writeUsName = writeUsPopup.querySelector(".write-us-name");
 let writeUsEmail = writeUsPopup.querySelector(".writeus-email");
 let writeUsMessage = writeUsPopup.querySelector(".write-us-message");
-let cartButtons = document.querySelectorAll(".btn-cart")
-let cartPopup = document.querySelector(".add-cart-popup")
-let cartClose = cartPopup.querySelector(".close-btn")
-let cartContinue = cartPopup.querySelector(".continue")
 let mapButton = document.querySelector(".map-link")
 let mapPopup = document.querySelector(".popup-map")
 let mapClose = mapPopup.querySelector(".close-btn")
@@ -30,6 +46,7 @@ try {
 }
 
 writeUsButton.addEventListener("click", function(evt) {
+    evt.preventDefault();
     writeUsPopup.classList.add("popup");
 
     if (storageName && storageEmail) {
@@ -70,20 +87,6 @@ window.addEventListener("keydown", function(evt) {
             cartPopup.classList.remove("popup")
         }
     }
-});
-
-for (let cartButton of cartButtons) {
-    cartButton.addEventListener("click", function(evt) {
-        cartPopup.classList.add("popup");
-    });
-};
-
-cartClose.addEventListener("click", function() {
-    cartPopup.classList.remove("popup");
-});
-
-cartContinue.addEventListener("click", function() {
-    cartPopup.classList.remove("popup");
 });
 
 mapButton.addEventListener("click", function(evt) {

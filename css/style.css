@@ -1703,6 +1703,8 @@ input::-webkit-inner-spin-button {
     left: 0;
     padding-top: 38px;
     display: none;
+    flex-direction: column;
+    align-items: center;
     width: 184px;
     height: 164px;
     background-color: var(--basic-white);
@@ -1710,7 +1712,7 @@ input::-webkit-inner-spin-button {
 
 .product-item:hover .btn-inner,
 .product-item:focus .btn-inner {
-    display: block;
+    display: flex;
 }
 
 .product-item:hover,
@@ -1784,13 +1786,27 @@ input::-webkit-inner-spin-button {
 }
 
 .btn-cart {
+    position: relative;
     display: block;
+    padding-top: 10px;
+    padding-left: 11px;
     color: var(--basic-white);
     border: none;
     border-radius: 2px;
     background-color: var(--basic-green);
     margin-bottom: 10px;
     box-shadow: inset 0px -3px 0px var(--basic-green-darkest);
+}
+
+.btn-cart::before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon-cart.svg);
+    width: 15px;
+    height: 15px;
+    left: 29px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
 }
 
 .btn-mark {
