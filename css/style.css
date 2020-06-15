@@ -1111,7 +1111,7 @@ h2 {
 .about-us-box {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
 }
 
 .about-us {
@@ -1927,6 +1927,7 @@ ul.pagination {
 .foot-find-us p {
     margin: 0;
     margin-top: 22px;
+    padding-left: 2px;
 }
 
 
@@ -1939,7 +1940,7 @@ ul.pagination {
 .footer-nav {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 54px;
+    padding-bottom: 55px;
 }
 
 .footer-nav-list {
@@ -2012,7 +2013,7 @@ ul.pagination {
     font-size: 16px;
     line-height: 18px;
     margin: 0;
-    margin-top: 35px;
+    margin-top: 36px;
 }
 
 .e-mail {
@@ -2027,9 +2028,8 @@ ul.pagination {
 }
 
 .copyright-text {
-    flex-grow: 1;
-    justify-self: flex-start;
     width: 227px;
+    margin-right: auto;
 }
 
 .e-mail a,
@@ -2055,12 +2055,12 @@ ul.pagination {
 /* Footer - Social */
 
 .social {
-    flex-grow: 1;
     margin: 0;
     padding: 0;
     margin-top: 34px;
     margin-bottom: 29px;
-    margin-left: 149px;
+    margin-left: 43px;
+    width: 136px;
 }
 
 .social ul {
@@ -2075,7 +2075,7 @@ ul.pagination {
 }
 
 .social-items li {
-    margin-right: 3px;
+    margin-right: 2px;
 }
 
 .social-item {
