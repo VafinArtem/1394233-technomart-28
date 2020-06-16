@@ -479,6 +479,15 @@ img {
     color: var(--basic-gray-extra-light)
 }
 
+.login-btn:active .login-btn-inner {
+    fill: var(--basic-gray-extra-light);
+}
+
+.login-btn:hover path,
+.login-btn:focus path {
+    fill: var(--basic-gray-normal);
+}
+
 .logout-btn {
     display: block;
     border: 0;
