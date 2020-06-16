@@ -785,12 +785,19 @@ img {
 /* Main - Offer - Slider */
 
 .slider-wrapper {
-    position: relative;
     grid-column: 1/3;
     grid-row: 2/4;
+    display: flex;
+    align-items: center;
+    width: 620px;
+    min-height: 266px;
+}
+
+.slider-inner {
+    position: relative;
     background-color: var(--basic-gray-light-adv);
     width: 620px;
-    height: 266px;
+    min-height: 266px;
 }
 
 .slider-list {
@@ -1222,7 +1229,7 @@ img {
 .breadcrumbs a {
     display: block;
     position: relative;
-    font-family: 'PT Sans', "Tahoma", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 13px;
     line-height: 13px;
     text-transform: uppercase;
