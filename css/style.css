@@ -1768,7 +1768,7 @@ input::-webkit-inner-spin-button {
     content: "";
     border: 19px solid var(--basic-black);
     top: 0px;
-    right: -19px;
+    left: 100%;
     border-right-width: 0;
     border-left-color: var(--basic-red);
     border-top-color: transparent;
