@@ -1849,7 +1849,7 @@ input::-webkit-inner-spin-button {
 }
 
 .pagination-box {
-    margin-top: 28px;
+    margin-top: 18px;
     margin-left: 1px;
     display: flex;
     align-items: flex-end;
