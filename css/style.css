@@ -490,13 +490,14 @@ img {
 
 .logout-btn {
     display: block;
-    border: 0;
+    border: none;
     width: 20px;
     height: 17px;
     background-color: var(--basic-white);
     margin-left: 14px;
     margin-top: 3px;
     cursor: pointer;
+    outline: none;
 }
 
 .logout-btn path,
@@ -1367,13 +1368,13 @@ img {
     cursor: pointer;
 }
 
-button.filter-btn:hover,
-button.filter-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
     border-color: var(--basic-gray-extra-light);
     outline: none;
 }
 
-button.filter-btn:active {
+.filter-btn:active {
     border-color: var(--basic-red);
     outline: none;
 }
@@ -1449,6 +1450,7 @@ button.filter-btn:active {
 
 .sort-current-items path,
 .sort-current-items {
+    border: none;
     color: var(--basic-red);
     fill: var(--basic-red);
     opacity: 1;
@@ -1718,12 +1720,16 @@ input::-webkit-inner-spin-button {
 }
 
 .product-item:hover .btn-inner,
-.product-item:focus .btn-inner {
+.product-item:focus-within .btn-inner {
+    display: flex;
+}
+
+.btn-inner-current {
     display: flex;
 }
 
 .product-item:hover,
-.product-item:focus {
+.product-item:focus-within {
     box-shadow: 0px 4px 20px var(--special-black-adv-opacity);
 }
 
@@ -1849,7 +1855,7 @@ input::-webkit-inner-spin-button {
     align-items: flex-end;
 }
 
-ul.pagination {
+.pagination {
     display: flex;
     margin: 0;
 }
