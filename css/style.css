@@ -1061,11 +1061,11 @@ img {
     display: grid;
 }
 
-.items-desc p {
+.item-desc p {
     width: 319px;
 }
 
-.items-desc li {
+.item-desc {
     grid-row: 1/-1;
     grid-column: 1/2;
     width: 620px;
@@ -1091,6 +1091,10 @@ img {
     background-image: url(../img/bg-credit.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+
+.credit-btn {
+    width: 195px;
 }
 
 .serv-item-active {
@@ -1271,7 +1275,7 @@ img {
 
 .filt-sorting-inner {
     background-color: var(--basic-beige-dark);
-    min-height: 38px;
+    height: 38px;
     padding-top: 9px;
     padding-left: 19px;
 }
@@ -2228,16 +2232,6 @@ input::-webkit-inner-spin-button {
     z-index: 100;
 }
 
-.popup-writeus-inner {
-    position: relative;
-}
-
-.write-us-inner {
-    width: 620px;
-    height: 430px;
-    border: solid 3px var(--basic-green-dark);
-}
-
 .write-us-form {
     display: flex;
     justify-content: space-between;
@@ -2290,7 +2284,12 @@ input::-webkit-inner-spin-button {
 }
 
 .write-us-form input::-webkit-input-placeholder,
-.write-us-form textarea::-webkit-input-placeholder,
+.write-us-form textarea::-webkit-input-placeholder {
+    color: var(--basic-gray-light);
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-size: 13px;
+}
+
 .write-us-form input::-moz-placeholder,
 .write-us-form textarea::-moz-placeholder {
     color: var(--basic-gray-light);

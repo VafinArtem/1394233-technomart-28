@@ -6,7 +6,7 @@
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -236,29 +236,29 @@
           Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="services-items">
-          <li><button type="button" disabled>Доставка</button></li>
-          <li><button type="button">Гарантия</button></li>
-          <li><button type="button">Кредит</button></li>
+          <li><button class="services-btn current-btn" type="button" disabled>Доставка</button></li>
+          <li><button class="services-btn" type="button">Гарантия</button></li>
+          <li><button class="services-btn" type="button">Кредит</button></li>
         </ul>
         <ul class="items-desc">
-          <li class="desc-delivery serv-item-active">
+          <li class="item-desc desc-delivery serv-item-active">
             <h3>Доставка</h3>
             <p class="text">
               Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
             </p>
           </li>
-          <li class="desc-guarantee">
+          <li class="item-desc desc-guarantee">
             <h3>Гарантия</h3>
             <p class="text">
               Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
             </p>
           </li>
-          <li class="desc-credit">
+          <li class="item-desc desc-credit">
             <h3>Кредит</h3>
             <p class="text">
               Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.
             </p>
-            <a href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+            <a class="main-btn credit-btn" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
           </li>
         </ul>
       </section>
@@ -395,6 +395,7 @@
     </div>
     <div class="cart-btn-inner"></div>
   </div>
+  <script src="js/slider-service.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 
