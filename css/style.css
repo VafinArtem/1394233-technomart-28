@@ -855,7 +855,7 @@ img {
     justify-content: space-between;
 }
 
-.slider-controls button {
+.slider-toggle {
     padding: 0;
     width: 10px;
     height: 10px;
